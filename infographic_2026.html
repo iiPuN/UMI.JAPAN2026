@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic สรุปผลความพึงพอใจการท่องเที่ยว ปี 2026</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Kanit -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Kanit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f8fafc;
+            color: #334155;
+        }
+        .infographic-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            background-color: white;
+            overflow: hidden;
+        }
+        .bar-anim {
+            animation: growBar 1.5s ease-out forwards;
+            transform-origin: left;
+        }
+        @keyframes growBar {
+            from { transform: scaleX(0); }
+            to { transform: scaleX(1); }
+        }
+    </style>
+</head>
+<body class="py-10 px-4 antialiased">
+
+    <div class="infographic-container rounded-3xl">
+        
+        <!-- Header Section -->
+        <header class="bg-gradient-to-r from-brand-600 to-indigo-700 text-white p-10 text-center relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+                <i class="fa-solid fa-plane text-9xl absolute -top-10 -left-10 transform rotate-45"></i>
+                <i class="fa-solid fa-globe text-9xl absolute -bottom-10 -right-10"></i>
+            </div>
+            <div class="relative z-10">
+                <span class="bg-white/20 text-white text-sm font-semibold px-4 py-1 rounded-full uppercase tracking-wider mb-4 inline-block">UMI Travel</span>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">สรุปผลความพึงพอใจการท่องเที่ยว</h1>
+                <p class="text-xl text-brand-100">ประจำปี 2026</p>
+            </div>
+        </header>
+
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 -mt-8 relative z-20 mx-4 md:mx-10">
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-slate-100 transform hover:-translate-y-1 transition duration-300">
+                <div class="w-12 h-12 mx-auto bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl mb-3">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <h3 class="text-slate-500 text-sm font-medium">ผู้ตอบแบบสอบถาม</h3>
+                <p class="text-3xl font-bold text-slate-800">7 <span class="text-base font-normal">ท่าน</span></p>
+            </div>
+            
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-slate-100 transform hover:-translate-y-1 transition duration-300">
+                <div class="w-12 h-12 mx-auto bg-yellow-100 text-yellow-500 rounded-full flex items-center justify-center text-xl mb-3">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="text-slate-500 text-sm font-medium">คะแนนรวมเฉลี่ย</h3>
+                <p class="text-3xl font-bold text-slate-800">4.0 <span class="text-base font-normal">/ 5</span></p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-slate-100 transform hover:-translate-y-1 transition duration-300">
+                <div class="w-12 h-12 mx-auto bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xl mb-3">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <h3 class="text-slate-500 text-sm font-medium">บริการดีเยี่ยม</h3>
+                <p class="text-3xl font-bold text-slate-800">100%</p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-slate-100 transform hover:-translate-y-1 transition duration-300">
+                <div class="w-12 h-12 mx-auto bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-xl mb-3">
+                    <i class="fa-solid fa-hotel"></i>
+                </div>
+                <h3 class="text-slate-500 text-sm font-medium">ที่พักน่าประทับใจ</h3>
+                <p class="text-3xl font-bold text-slate-800">86%</p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="p-6 md:p-10 space-y-12">
+
+            <!-- Section 1: Service -->
+            <section>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-14 h-14 bg-green-500 text-white rounded-2xl flex items-center justify-center text-2xl shadow-md">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-800">1. ด้านการบริการ <span class="text-green-500">(จุดเด่นที่สุดของทริป)</span></h2>
+                        <p class="text-slate-500">ภาพรวมการบริการอยู่ในเกณฑ์ "ดีเยี่ยม" สร้างความประทับใจสูงสุด</p>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 space-y-5">
+                    
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-medium text-slate-700">การให้บริการของไกด์</span>
+                            <span class="font-bold text-green-600">5 เต็ม (100%)</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-3">
+                            <div class="bg-green-500 h-3 rounded-full bar-anim" style="width: 100%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-medium text-slate-700">การให้บริการของเจ้าหน้าที่ UMI</span>
+                            <span class="font-bold text-green-600">5 เต็ม (100%)</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-3">
+                            <div class="bg-green-500 h-3 rounded-full bar-anim" style="width: 100%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-medium text-slate-700">ด้านการบริการโดยรวม</span>
+                            <span class="font-bold text-green-600">5 เต็ม (100%)</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-3">
+                            <div class="bg-green-500 h-3 rounded-full bar-anim" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Accommodation & Food -->
+            <section>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-14 h-14 bg-indigo-500 text-white rounded-2xl flex items-center justify-center text-2xl shadow-md">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-800">2. สถานที่พักและอาหาร</h2>
+                        <p class="text-slate-500">ผู้ร่วมทริปมีความพึงพอใจในที่พักและอาหารในระดับสูงมาก</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-indigo-50 p-5 rounded-2xl border border-indigo-100 text-center">
+                        <i class="fa-solid fa-bed text-3xl text-indigo-400 mb-3"></i>
+                        <h4 class="font-medium text-slate-700 mb-2">ความเหมาะสมของโรงแรม</h4>
+                        <div class="text-2xl font-bold text-indigo-600">86% <span class="text-sm font-normal text-slate-500">ให้ 5 คะแนน</span></div>
+                    </div>
+                    
+                    <div class="bg-indigo-50 p-5 rounded-2xl border border-indigo-100 text-center">
+                        <i class="fa-solid fa-mug-hot text-3xl text-indigo-400 mb-3"></i>
+                        <h4 class="font-medium text-slate-700 mb-2">ปริมาณอาหาร/เครื่องดื่ม</h4>
+                        <div class="text-2xl font-bold text-indigo-600">86% <span class="text-sm font-normal text-slate-500">ให้ 5 คะแนน</span></div>
+                    </div>
+
+                    <div class="bg-indigo-50 p-5 rounded-2xl border border-indigo-100 text-center">
+                        <i class="fa-solid fa-star-half-stroke text-3xl text-indigo-400 mb-3"></i>
+                        <h4 class="font-medium text-slate-700 mb-2">คุณภาพอาหาร/เครื่องดื่ม</h4>
+                        <div class="text-2xl font-bold text-indigo-600">71% <span class="text-sm font-normal text-slate-500">ให้ 5 คะแนน</span></div>
+                        <div class="text-sm text-slate-500 mt-1">(อีก 29% ให้ 4 คะแนน)</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Tour Program -->
+            <section>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-14 h-14 bg-orange-500 text-white rounded-2xl flex items-center justify-center text-2xl shadow-md">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-800">3. โปรแกรมการท่องเที่ยว</h2>
+                        <p class="text-slate-500">ส่วนใหญ่อยู่ในเกณฑ์ดี (4 คะแนน) แต่มีจุดที่ต้องพัฒนาเรื่องการเดินทาง</p>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 space-y-6">
+                    <div>
+                        <h4 class="font-medium text-slate-700 mb-3">ภาพรวมโปรแกรมท่องเที่ยว</h4>
+                        <div class="flex h-6 rounded-full overflow-hidden">
+                            <div class="bg-blue-500 flex items-center justify-center text-white text-xs font-bold" style="width: 86%">4 คะแนน (86%)</div>
+                            <div class="bg-green-500 flex items-center justify-center text-white text-xs font-bold" style="width: 14%">5 (14%)</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-medium text-slate-700 mb-3">ความน่าสนใจของสถานที่ (คะแนนเฉลี่ยดี)</h4>
+                        <div class="flex h-6 rounded-full overflow-hidden">
+                            <div class="bg-blue-500 flex items-center justify-center text-white text-xs font-bold" style="width: 57%">4 คะแนน (57%)</div>
+                            <div class="bg-green-500 flex items-center justify-center text-white text-xs font-bold" style="width: 43%">5 คะแนน (43%)</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-medium text-slate-700 mb-3 flex items-center gap-2">
+                            ความเหมาะสมของระยะเวลาเดินทาง <i class="fa-solid fa-circle-exclamation text-orange-500"></i>
+                        </h4>
+                        <p class="text-sm text-slate-500 mb-2">เป็นหัวข้อเดียวที่มีการให้ 3 คะแนน (ควรปรับปรุง)</p>
+                        <div class="flex h-6 rounded-full overflow-hidden">
+                            <div class="bg-orange-400 flex items-center justify-center text-white text-xs font-bold" style="width: 14%">3 (14%)</div>
+                            <div class="bg-blue-500 flex items-center justify-center text-white text-xs font-bold" style="width: 43%">4 (43%)</div>
+                            <div class="bg-green-500 flex items-center justify-center text-white text-xs font-bold" style="width: 43%">5 (43%)</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: Feedback -->
+            <section class="mt-10 pt-10 border-t border-slate-200">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-slate-800">เสียงจากลูกค้า (Feedback)</h2>
+                    <p class="text-slate-500 mt-2">ข้อคิดเห็นและข้อเสนอแนะเพื่อการพัฒนาทริปในอนาคต</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Pros -->
+                    <div class="bg-emerald-50 rounded-2xl p-6 border border-emerald-100 relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 text-emerald-200 opacity-30 text-8xl">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-emerald-700 mb-4 flex items-center gap-2 relative z-10">
+                            <i class="fa-solid fa-circle-check"></i> สิ่งที่ทำได้ดี (คำชม)
+                        </h3>
+                        <ul class="space-y-3 relative z-10">
+                            <li class="flex items-start gap-3 text-slate-700">
+                                <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                                <span><strong>การบริการ:</strong> ดูแลดีมาก อาหารอิ่มอร่อยทุกมื้อ</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-700">
+                                <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                                <span><strong>ที่พัก:</strong> การจัดให้พักแบบวิลล่าถือเป็นความแปลกใหม่และดีกว่าทริปที่ผ่านๆ มา</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-700">
+                                <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                                <span><strong>ภาพรวมบริษัท:</strong> ทำได้ดีขึ้นเรื่อยๆ สู้กับคู่แข่งได้สบาย เพราะกลุ่มเป้าหมายชัดเจน ทำให้ลูกทัวร์เข้ากันได้และสนุกสนาน</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Cons / Suggestions -->
+                    <div class="bg-rose-50 rounded-2xl p-6 border border-rose-100 relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 text-rose-200 opacity-30 text-8xl">
+                            <i class="fa-regular fa-lightbulb"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-rose-700 mb-4 flex items-center gap-2 relative z-10">
+                            <i class="fa-solid fa-wrench"></i> สิ่งที่ควรปรับปรุง
+                        </h3>
+                        <ul class="space-y-3 relative z-10">
+                            <li class="flex items-start gap-3 text-slate-700">
+                                <i class="fa-solid fa-arrow-right text-rose-500 mt-1"></i>
+                                <span><strong>การเดินทาง:</strong> ควรลดระยะเวลาการนั่งรถ หรือลดระยะเวลาการเดินทางระหว่างทริปลง</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-700">
+                                <i class="fa-solid fa-arrow-right text-rose-500 mt-1"></i>
+                                <span><strong>ที่พัก:</strong> ควรลดการย้ายที่พักบ่อยๆ เพื่อความสะดวกสบาย</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-slate-700">
+                                <i class="fa-solid fa-arrow-right text-rose-500 mt-1"></i>
+                                <span><strong>เนื้อหาทริป:</strong> อยากให้มีการจัดโปรแกรมที่พาเจาะลึกสถานที่ท่องเที่ยวเพิ่มขึ้นอีกเล็กน้อย</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-slate-800 text-slate-400 text-center py-6 mt-4">
+            <p class="text-sm">จัดทำจากข้อมูลแบบฟอร์มความพึงพอใจเกี่ยวกับการท่องเที่ยว ปี 2026</p>
+        </footer>
+    </div>
+
+</body>
+</html>
