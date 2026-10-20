@@ -1,301 +1,450 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infographic สรุปผลความพึงพอใจการท่องเที่ยว ปี 2026</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Kanit -->
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Kanit', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            50: '#f0f9ff',
-                            100: '#e0f2fe',
-                            500: '#0ea5e9',
-                            600: '#0284c7',
-                            900: '#0c4a6e',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body {
-            background-color: #f8fafc;
-            color: #334155;
-        }
-        .infographic-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            background-color: white;
-            overflow: hidden;
-        }
-        .bar-anim {
-            animation: growBar 1.5s ease-out forwards;
-            transform-origin: left;
-        }
-        @keyframes growBar {
-            from { transform: scaleX(0); }
-            to { transform: scaleX(1); }
-        }
-    </style>
-</head>
-<body class="py-10 px-4 antialiased">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#910c2d"><meta name="description" content="28 November 2026 | No More Waiting, It&#39;s Our Wedding!">
+<title>You're Invited!</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="You're Invited!">
+<meta property="og:description" content="28 November 2026 | No More Waiting, It&#39;s Our Wedding!">
+<meta property="og:url" content="https://iipun.github.io/NoMoreWaitingItsOurWedding.PalmPun/">
+<meta property="og:image" content="https://iipun.github.io/NoMoreWaitingItsOurWedding.PalmPun/assets/og-cover.jpg">
+<meta property="og:image:secure_url" content="https://iipun.github.io/NoMoreWaitingItsOurWedding.PalmPun/assets/og-cover.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Palm & Pun Wedding Invitation, 28 November 2026">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://iipun.github.io/NoMoreWaitingItsOurWedding.PalmPun/assets/og-cover.jpg">
+<meta name="twitter:title" content="You're Invited!">
+<meta name="twitter:description" content="28 November 2026 | No More Waiting, It&#39;s Our Wedding!"><style>
+:root{--red:#910c2d;--blue:#7eb4d5;--cream:#f7eee5;--ink:#24191b;--white:#fffaf6}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'Trebuchet MS',Arial,sans-serif;color:var(--ink);background:var(--cream)}button,a,input,select{font:inherit}a{color:inherit}.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;z-index:20;background:white;padding:10px}.hero{min-height:100svh;background:#89bfda;display:flex;align-items:center;justify-content:center;padding:34px 18px 26px;position:relative;overflow:hidden}.cloud{position:absolute;width:210px;height:56px;border-radius:55%;background:#ffffff4f;filter:blur(22px);pointer-events:none;animation:drift 16s ease-in-out infinite alternate}.cloud.one{top:10%;left:-110px;opacity:.55}.cloud.two{right:-150px;bottom:18%;width:270px;opacity:.45;animation-delay:-6s}.hero-inner{width:min(100%,430px);position:relative;text-align:center;z-index:2}.hero:before{content:"";position:absolute;inset:0;background:url("assets/hero-clouds.jpg") center center/cover no-repeat;opacity:1;transform:scale(1.03);animation:heroZoom 22s ease-in-out infinite alternate}.hero:after{content:"";position:absolute;inset:0;background:rgba(16,22,42,.48);opacity:0;transition:opacity .55s ease;pointer-events:none;z-index:1}.hero:has(.hero-card:hover,.hero-card:focus-visible):after{opacity:1}.hero .cloud{z-index:1}.walk-zone{pointer-events:none;position:absolute;left:0;right:0;bottom:18px;height:190px;z-index:5;overflow:hidden}.walk-zone:before{content:"";position:absolute;left:-5%;right:-5%;bottom:2px;height:34px;background:radial-gradient(ellipse at center, rgba(255,255,255,.32) 0%, rgba(255,255,255,.12) 45%, rgba(255,255,255,0) 72%);filter:blur(8px)}.walking-stars{position:absolute;left:12px;bottom:18px;width:clamp(145px,27vw,185px);height:auto;object-fit:contain;animation:wander 24s linear infinite;filter:drop-shadow(0 12px 18px rgba(34,55,74,.28)) drop-shadow(0 2px 2px rgba(255,255,255,.35))}.music-toggle{position:fixed;right:14px;bottom:14px;z-index:99;background:#910c2d;color:white;border:2px solid #fff9f2;border-radius:999px;padding:12px 17px;cursor:pointer;font-weight:800;font-size:12px;box-shadow:0 5px 12px #29121b55}.music-toggle:focus-visible{outline:3px solid #7eb4d5;outline-offset:3px}.music-helper{font-size:12px;color:#673748;background:#fffaf6e8;border-radius:999px;padding:7px 12px;display:inline-block;margin:6px auto 0;box-shadow:0 2px 10px rgba(0,0,0,.08)}@keyframes wander{0%{transform:translateX(0) scaleX(1)}47%{transform:translateX(calc(100vw - 100% - 24px)) scaleX(1)}50%{transform:translateX(calc(100vw - 100% - 24px)) scaleX(-1)}97%{transform:translateX(0) scaleX(-1)}100%{transform:translateX(0) scaleX(1)}}@keyframes wanderDetails{0%{transform:translateX(0) scaleX(1)}47%{transform:translateX(calc(100vw - 100% - 24px)) scaleX(1)}50%{transform:translateX(calc(100vw - 100% - 24px)) scaleX(-1)}97%{transform:translateX(0) scaleX(-1)}100%{transform:translateX(0) scaleX(1)}}@media (max-width:480px){.hero{padding-bottom:168px}.walk-zone{height:148px;bottom:14px}.walk-zone:before{height:26px}.walking-stars{width:156px;bottom:12px}.hero-card{width:min(100%,330px)}.mini{margin-bottom:6px}.hint{margin-top:8px}.details{padding:60px 18px 130px}.details-walk-zone{height:96px;bottom:6px}.details-walker{width:118px;bottom:4px}}.mini{font-size:12px;font-weight:900;letter-spacing:.19em;color:var(--red);margin-bottom:14px}.hero-card{display:block;width:min(100%,355px);margin:auto;filter:drop-shadow(0 18px 30px rgba(37,52,67,.35));border-radius:12px;transition:transform .6s cubic-bezier(.2,.8,.2,1)}.hero-card:hover,.hero-card:focus-visible{transform:rotate(-1.5deg) scale(1.015);filter:drop-shadow(0 22px 32px rgba(28,21,35,.52))}.hero-card:focus-visible{outline:3px solid var(--red);outline-offset:5px}.pill{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:none;border-radius:999px;background:var(--red);color:white;text-decoration:none;cursor:pointer;min-height:48px;padding:14px 24px;font-weight:900;letter-spacing:.06em;box-shadow:0 5px 0 #54051a;transition:transform .15s}.pill:hover{transform:translateY(-2px)}.pill:active{transform:translateY(3px);box-shadow:0 2px 0 #54051a}.hero .pill{margin-top:16px}.hint{display:block;font-size:12px;margin-top:15px;color:#673748;text-shadow:0 1px 0 rgba(255,255,255,.4)}.floating-star{position:absolute;display:grid;place-items:center;font-size:25px;color:var(--red);animation:twinkle 2.7s ease-in-out infinite;pointer-events:none}.floating-star.a{top:16%;left:7%}.floating-star.b{bottom:20%;right:5%;animation-delay:1s}.floating-star.c{top:47%;right:3%;animation-delay:.5s}nav{position:sticky;top:0;z-index:10;background:#fff9f2f2;backdrop-filter:blur(10px);border-bottom:2px solid #a30c2c22;display:flex;justify-content:center;gap:20px;padding:14px 10px;flex-wrap:wrap}nav a{text-decoration:none;color:var(--red);font-size:12px;font-weight:900;letter-spacing:.05em}section:not(.hero){scroll-margin-top:0}.section{padding:70px 22px;text-align:center}.wrap{max-width:680px;margin:auto}.eyebrow{color:var(--red);letter-spacing:.2em;font-size:12px;font-weight:bold}.title{font-size:clamp(31px,8vw,52px);line-height:1.05;margin:14px 0 18px;letter-spacing:-.035em}.sub{font-size:16px;line-height:1.65}.details{background:var(--cream);position:relative;overflow:hidden;padding:64px 22px 136px}.stamp{max-width:520px;margin:24px auto;background:#fffaf3;border:3px solid var(--red);border-radius:42% 42% 39% 39% / 9% 9% 9% 9%;padding:28px 20px 24px;box-shadow:0 9px 0 #910c2d15}.date{font-size:clamp(28px,8vw,46px);font-weight:900;letter-spacing:-.05em;color:var(--red)}.facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0 20px}.fact{background:#f4e7da;border-radius:14px;padding:14px 10px;text-align:center}.fact strong{display:block;color:var(--red);font-size:11px;letter-spacing:.14em;margin-bottom:8px}.fact span{font-size:14px;font-weight:700}.details-walk-zone{pointer-events:none;position:absolute;left:0;right:0;bottom:6px;height:102px;overflow:visible}.details-walk-zone:before{content:"";position:absolute;left:7%;right:7%;bottom:4px;height:22px;background:radial-gradient(ellipse at center, rgba(145,12,45,.14) 0%, rgba(145,12,45,.07) 45%, rgba(145,12,45,0) 72%);filter:blur(7px)}.details-walker{position:absolute;left:12px;bottom:6px;width:clamp(110px,19vw,142px);aspect-ratio:560/640;height:auto;object-fit:contain;animation:wanderDetails 19s linear infinite;filter:drop-shadow(0 8px 12px rgba(112,61,75,.16))}.cta-row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin:22px 0 0;position:relative;z-index:1}.secondary{background:#83b6d6;color:#2a2933;box-shadow:0 5px 0 #437897}.timeline{background:var(--red);color:white}.timeline .eyebrow{color:#e6b4c1}.timeline .title{color:var(--blue);font-family:'Trebuchet MS',sans-serif;font-weight:1000;font-style:italic}.reference{max-width:390px;width:85%;display:block;margin:25px auto;border:3px solid #b35368;border-radius:12px}.timeline-list{margin:30px auto;max-width:620px;display:grid;gap:22px;position:relative}.timeline-list:before{content:'';position:absolute;left:26px;top:24px;bottom:24px;border-left:3px dotted var(--blue)}.event{display:grid;grid-template-columns:54px 94px 1fr;gap:12px 16px;align-items:center;text-align:left;position:relative}.event .spark{z-index:1;width:54px;height:54px;display:grid;place-items:center;color:var(--blue);font-size:35px;flex-shrink:0;text-shadow:0 0 2px white}.event .spark svg{display:block;width:40px;height:40px;flex:none;filter:drop-shadow(0 0 2px rgba(255,255,255,.3))}.event-copy{padding-top:0}.event .time{color:#b7dcf2;font-size:15px;font-weight:900}.event h3{margin:3px 0 0;font-size:19px}.event-art{display:flex;align-items:center;justify-content:center;width:94px;min-height:72px}.event-art img{display:block;width:100%;max-height:82px;object-fit:contain;filter:drop-shadow(0 3px 8px rgba(255,255,255,.06))}.small-note{font-size:12px;color:#f6d7db}.dress{background:#e3f0f6}.dress-remark{max-width:470px;margin:18px auto 0;padding:12px 18px;border:1px dashed var(--red);border-radius:14px;color:var(--red);font-size:14px;line-height:1.55;background:#fff9f180}.dress .statement{font-size:clamp(22px,6vw,34px);font-weight:900;color:var(--red);margin:18px 0}.star-img{display:block;width:220px;max-width:65%;height:auto;object-fit:contain;margin:18px auto;animation:bob 3.5s ease-in-out infinite;filter:drop-shadow(0 12px 14px rgba(37,64,82,.16))}.venue{background:var(--cream)}.venue-card{margin:24px auto;padding:28px;border:3px solid var(--red);border-radius:24px;background:#fffbf4;max-width:540px}.venue-name{font-size:25px;font-weight:900;color:var(--red);margin:12px 0}.venue-map{margin:18px auto 20px;width:100%;max-width:455px;aspect-ratio:4/3;border:2px solid #dfbbc5;border-radius:18px;overflow:hidden;background:#e9e6df;box-shadow:0 8px 18px rgba(65,14,27,.10)}.venue-map iframe{display:block;position:relative;top:-65px;width:100%;height:calc(100% + 65px);border:0}.venue-map-note{font-size:12px;color:#703d4b;margin:0 auto 14px;line-height:1.5}@media(max-width:480px){.venue-card{padding:22px 16px}.venue-map{aspect-ratio:1.13}}.rsvp{background:#b7d6e9}.rsvp-box{background:#fffaf4;border:3px solid var(--red);border-radius:30px;max-width:530px;padding:30px 24px;margin:24px auto}.field-hint{margin:2px 0 8px;text-align:left;font-size:13px;color:#703d4b}.rsvp-box textarea{width:100%;border:2px solid #dfbbc5;background:white;padding:14px;border-radius:10px;resize:vertical;min-height:100px;line-height:1.5}.rsvp-box label{display:block;text-align:left;font-weight:800;margin:16px 0 7px}.rsvp-box input,.rsvp-box select{width:100%;border:2px solid #dfbbc5;background:white;padding:14px;border-radius:10px;min-height:48px}.rsvp-box [hidden]{display:none!important}.rsvp-box button{margin-top:24px}.status{font-size:13px;line-height:1.6;color:#703d4b}.closing{background:var(--red);color:#fffaf3}.closing .title{color:#9dc8e2}.closing img{width:220px;max-width:72%;height:auto;border-radius:0;filter:drop-shadow(0 10px 18px rgba(22,46,66,.16))}.footer{padding:18px;text-align:center;background:#750b25;color:#fff;font-size:12px}.fade{opacity:0;transform:translateY(25px);transition:opacity .65s ease,transform .65s ease}.fade.visible{opacity:1;transform:translateY(0)}@keyframes heroZoom{0%{transform:scale(1.03)}100%{transform:scale(1.10)}}@keyframes bob{50%{transform:translateY(-10px) rotate(4deg)}}@keyframes drift{to{transform:translateX(65px)}}@keyframes twinkle{50%{opacity:.3;transform:scale(.7) rotate(30deg)}}@media(max-width:380px){.facts{grid-template-columns:1fr}.hero{padding:24px 16px}.hero-card{max-width:300px}nav{gap:11px}.details{padding:58px 18px 128px}.details-walk-zone{height:92px}.details-walker{width:112px;bottom:4px}}@media(max-width:520px){.timeline-list{max-width:360px}.event{grid-template-columns:46px 76px 1fr;gap:10px 12px}.timeline-list:before{left:22px}.event .spark{width:46px;height:46px;font-size:30px}.event .spark svg{width:34px;height:34px}.event-art{width:76px;min-height:58px}.event-art img{max-height:66px}.event h3{font-size:17px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.hero:before{transform:none}.fade{opacity:1;transform:none}.details-walker,.walking-stars{transform:none!important}}
+.countdown{max-width:340px;margin:12px auto 8px;text-align:center}.countdown-kicker{display:block;font-size:9px;color:var(--red);font-weight:900;letter-spacing:.10em;margin-bottom:8px;opacity:.85}.countdown-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}.countdown-unit{background:#fffaf3;border:2px solid var(--red);border-radius:10px;min-width:0;padding:8px 2px 7px;box-shadow:0 3px 0 #910c2d10}.countdown-unit strong{display:block;color:var(--red);font-size:clamp(15px,4.2vw,24px);line-height:1.05;font-variant-numeric:tabular-nums}.countdown-unit small{display:block;color:#673748;font-size:clamp(6px,1.7vw,9px);font-weight:900;letter-spacing:.06em;margin-top:4px}.countdown-complete{color:var(--red);font-size:14px;font-weight:900;margin:8px 0 0}.countdown.countdown-inside{max-width:330px}@media(max-width:370px){.countdown-grid{gap:4px}.countdown-unit{border-radius:9px;padding:7px 1px 6px}.countdown-unit strong{font-size:14px}.countdown-kicker{font-size:8px}}
+/* Playful timeline illustrations — works with mouse, tap, and keyboard. */
+.timeline .event-art{appearance:none;border:0;background:transparent;padding:4px;margin:0;cursor:pointer;border-radius:12px;touch-action:manipulation;position:relative;transition:transform .2s ease,filter .2s ease}.timeline .event-art:hover,.timeline .event-art:focus-visible,.timeline .event-art.is-playing{transform:translateY(-2px) scale(1.04);filter:drop-shadow(0 4px 12px rgba(255,255,255,.10))}.timeline .event-art:focus-visible{outline:2px dashed #a9d7ef;outline-offset:5px}.timeline .event-art img{pointer-events:none;display:block;max-width:100%;max-height:82px;width:auto;height:auto;object-fit:contain;will-change:contents}.timeline .event-art.event-art-guests img{max-height:86px}.timeline .event-art.event-art-dinner img{max-height:74px}@media(max-width:520px){.timeline .event-art img{max-height:66px}.timeline .event-art.event-art-guests img{max-height:68px}.timeline .event-art.event-art-dinner img{max-height:58px}}@media(prefers-reduced-motion:reduce){.timeline .event-art,.timeline .event-art img{transition:none!important;filter:none!important;transform:none!important;will-change:auto}}
 
-    <div class="infographic-container rounded-3xl">
-        
-        <!-- Header Section -->
-        <header class="bg-gradient-to-r from-brand-600 to-indigo-700 text-white p-10 text-center relative overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-                <i class="fa-solid fa-plane text-9xl absolute -top-10 -left-10 transform rotate-45"></i>
-                <i class="fa-solid fa-globe text-9xl absolute -bottom-10 -right-10"></i>
-            </div>
-            <div class="relative z-10">
-                <span class="bg-white/20 text-white text-sm font-semibold px-4 py-1 rounded-full uppercase tracking-wider mb-4 inline-block">UMI Travel</span>
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">สรุปผลความพึงพอใจการท่องเที่ยว</h1>
-                <p class="text-xl text-brand-100">ประจำปี 2026</p>
-            </div>
-        </header>
+/* Responsive closing headline: two lines desktop, three lines mobile */
+.closing-headline{max-width:760px;margin:18px auto 22px;line-height:1.14}.closing-headline .closing-desktop{display:grid;justify-items:center;gap:.08em}.closing-headline .closing-desktop>span{display:block;white-space:nowrap}.closing-headline{font-size:clamp(17px,4.1vw,48px)}@media(max-width:600px){.closing-headline{font-size:clamp(15px,4.65vw,28px);max-width:100%;line-height:1.13}}
 
-        <!-- Quick Stats -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 -mt-8 relative z-20 mx-4 md:mx-10">
-            <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-slate-100 transform hover:-translate-y-1 transition duration-300">
-                <div class="w-12 h-12 mx-auto bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl mb-3">
-                    <i class="fa-solid fa-users"></i>
-                </div>
-                <h3 class="text-slate-500 text-sm font-medium">ผู้ตอบแบบสอบถาม</h3>
-                <p class="text-3xl font-bold text-slate-800">7 <span class="text-base font-normal">ท่าน</span></p>
-            </div>
-            
-            <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-slate-100 transform hover:-translate-y-1 transition duration-300">
-                <div class="w-12 h-12 mx-auto bg-yellow-100 text-yellow-500 rounded-full flex items-center justify-center text-xl mb-3">
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <h3 class="text-slate-500 text-sm font-medium">คะแนนรวมเฉลี่ย</h3>
-                <p class="text-3xl font-bold text-slate-800">4.0 <span class="text-base font-normal">/ 5</span></p>
-            </div>
+/* V5.1: viewport-sized chapters that still grow when content needs space */
+html{scroll-snap-type:y proximity;scroll-padding-top:0}
+.hero,.section{scroll-snap-align:start;scroll-snap-stop:normal}
+.section{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:clamp(72px,9svh,106px);padding-bottom:clamp(38px,5.5svh,76px)}
+.section>.wrap{width:100%;max-width:680px}
+.details{padding-top:clamp(72px,9svh,100px);padding-bottom:clamp(126px,16svh,156px)}
+.details .stamp{margin-block:clamp(14px,2.4svh,24px)}
+.details .cta-row{margin-top:clamp(12px,2svh,22px)}
+.timeline .timeline-list{margin-block:clamp(14px,2.6svh,30px);gap:clamp(12px,2.5svh,22px)}
+.venue-card{margin-block:clamp(12px,2.4svh,24px);padding:clamp(16px,3svh,28px)}
+.venue-map{aspect-ratio:4/3;max-height:min(34svh,320px)}
+.rsvp-box{margin-block:clamp(12px,2.4svh,24px);padding:clamp(18px,3svh,30px) 24px}
+.closing img{width:clamp(140px,22svh,220px)}
+/* Smaller viewport: keep headings, controls and artwork readable rather than cropping */
+@media(max-height:760px){
+ .section{padding-top:75px;padding-bottom:34px}
+ .details{padding-bottom:120px}
+ .section .title{margin-block:9px 12px}
+ .section .sub{font-size:14px;line-height:1.45}
+ .details .stamp{padding:18px 18px 16px}
+ .details .facts{margin-block:12px}
+ .details .fact{padding:9px 8px}
+ .dress .star-img{width:clamp(125px,19svh,185px);margin-block:10px}
+ .dress .statement{margin-block:10px}
+ .dress-remark{margin-top:12px}
+ .venue-map{max-height:30svh}
+ .rsvp-box label{margin-top:12px}
+ .rsvp-box textarea{min-height:75px}
+}
+@media(max-height:620px){
+ .section{min-height:100svh;justify-content:flex-start}
+ .details{padding-top:72px;padding-bottom:115px}
+ .venue-map{max-height:220px}
+ .timeline .timeline-list{gap:12px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-snap-type:none}}
 
-            <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-slate-100 transform hover:-translate-y-1 transition duration-300">
-                <div class="w-12 h-12 mx-auto bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xl mb-3">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-                <h3 class="text-slate-500 text-sm font-medium">บริการดีเยี่ยม</h3>
-                <p class="text-3xl font-bold text-slate-800">100%</p>
-            </div>
+/* Closing star: gentle, accessible motion */
+.closing img{animation:closingStarFloat 4.6s ease-in-out infinite;transform-origin:center;will-change:transform}
+.closing img:hover{animation:closingStarWave 1.3s ease-in-out infinite}
+@keyframes closingStarFloat{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-13px) rotate(2deg)}}
+@keyframes closingStarWave{0%,100%{transform:translateY(0) rotate(-3deg)}35%{transform:translateY(-10px) rotate(4deg)}70%{transform:translateY(-5px) rotate(-1deg)}}
+@media(prefers-reduced-motion:reduce){.closing img,.closing img:hover{animation:none!important;transform:none!important}}
 
-            <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-slate-100 transform hover:-translate-y-1 transition duration-300">
-                <div class="w-12 h-12 mx-auto bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-xl mb-3">
-                    <i class="fa-solid fa-hotel"></i>
-                </div>
-                <h3 class="text-slate-500 text-sm font-medium">ที่พักน่าประทับใจ</h3>
-                <p class="text-3xl font-bold text-slate-800">86%</p>
-            </div>
-        </div>
+/* RSVP confirmation — visible only after a verified success response. */
+.rsvp-success[hidden]{display:none!important}
+.rsvp-success{position:fixed;inset:0;z-index:250;display:grid;place-items:center;padding:20px;background:rgba(29,16,26,.68);backdrop-filter:blur(7px);overflow-y:auto}
+.rsvp-success-card{position:relative;width:min(100%,420px);max-height:calc(100dvh - 40px);overflow-y:auto;border:3px solid #fff4e7;background:#910c2d;color:#fffaf6;border-radius:28px;padding:26px 22px 30px;text-align:center;box-shadow:0 22px 65px #1c071951;animation:rsvpCardPop .5s cubic-bezier(.17,.89,.32,1.25) both}
+.rsvp-success-spark{position:absolute;color:#a7d4ed;font-size:27px;pointer-events:none;animation:rsvpSparkle 1.4s ease-in-out infinite alternate}
+.rsvp-success-spark.left{left:13%;top:16%}.rsvp-success-spark.right{right:13%;top:28%;animation-delay:.35s}
+.rsvp-success-star{display:block;width:min(52%,190px);height:auto;max-height:190px;object-fit:contain;margin:0 auto 12px;filter:drop-shadow(0 8px 16px #200d2655);animation:rsvpStarBounce .95s cubic-bezier(.22,.68,.26,1.16) both}
+.rsvp-success-title{font-size:clamp(22px,5.5vw,30px);line-height:1.18;color:#b1d9ee;margin:5px 0 12px;font-weight:900}
+.rsvp-success-message{font-size:16px;line-height:1.5;margin:0 0 9px}
+.rsvp-success-name{font-size:14px;opacity:.9;margin:0 0 16px;overflow-wrap:anywhere}
+.rsvp-success-close{border:0;background:#fffaf6;color:#910c2d;border-radius:30px;padding:13px 20px;min-height:46px;font-weight:900;cursor:pointer}
+.rsvp-success-close:focus-visible{outline:3px solid #a7d4ed;outline-offset:3px}
+body.rsvp-modal-open{overflow:hidden}
+@keyframes rsvpStarBounce{0%{opacity:0;transform:translateY(70px) scale(.4) rotate(-18deg)}55%{opacity:1;transform:translateY(-13px) scale(1.12) rotate(7deg)}80%{transform:translateY(5px) scale(.96) rotate(-2deg)}100%{transform:translateY(0) scale(1) rotate(0)}}
+@keyframes rsvpCardPop{from{opacity:0;transform:translateY(28px) scale(.94)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes rsvpSparkle{to{opacity:.35;transform:scale(.68) rotate(20deg)}}
+@media (prefers-reduced-motion:reduce){.rsvp-success-card,.rsvp-success-star,.rsvp-success-spark{animation:none!important}}
 
-        <!-- Main Content -->
-        <div class="p-6 md:p-10 space-y-12">
 
-            <!-- Section 1: Service -->
-            <section>
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="w-14 h-14 bg-green-500 text-white rounded-2xl flex items-center justify-center text-2xl shadow-md">
-                        <i class="fa-solid fa-hand-holding-heart"></i>
-                    </div>
-                    <div>
-                        <h2 class="text-2xl font-bold text-slate-800">1. ด้านการบริการ <span class="text-green-500">(จุดเด่นที่สุดของทริป)</span></h2>
-                        <p class="text-slate-500">ภาพรวมการบริการอยู่ในเกณฑ์ "ดีเยี่ยม" สร้างความประทับใจสูงสุด</p>
-                    </div>
-                </div>
-                
-                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 space-y-5">
-                    
-                    <div>
-                        <div class="flex justify-between mb-1">
-                            <span class="font-medium text-slate-700">การให้บริการของไกด์</span>
-                            <span class="font-bold text-green-600">5 เต็ม (100%)</span>
-                        </div>
-                        <div class="w-full bg-slate-200 rounded-full h-3">
-                            <div class="bg-green-500 h-3 rounded-full bar-anim" style="width: 100%"></div>
-                        </div>
-                    </div>
+/* V6.0: reliably keep overlay hidden until verified and show thank-you. */
+.rsvp-success[hidden]{display:none!important}
+/* V5.9: celebratory reveal when the server confirms the RSVP. */
+.rsvp-success{background:rgba(24,10,24,.82);z-index:9999;isolation:isolate}
+.rsvp-success-card{width:min(100%,460px);padding:35px 22px 32px;box-shadow:0 30px 95px rgba(10,2,16,.6)}
+.rsvp-success-star{width:min(68%,255px);max-height:260px;margin:4px auto 10px;filter:drop-shadow(0 12px 22px rgba(15,5,25,.36));animation:rsvpStarBigPop 1.25s cubic-bezier(.18,.78,.22,1) both}
+.rsvp-success-card .rsvp-success-spark{font-size:37px;animation:rsvpSparkBurst 1.5s ease-in-out infinite alternate}
+.rsvp-success-title{margin-top:10px}
+.rsvp-success[data-celebrate="true"] .rsvp-success-card{animation:rsvpCardPop .45s ease-out both}
+@keyframes rsvpStarBigPop{0%{opacity:0;transform:translateY(110px) scale(.12) rotate(-24deg)}50%{opacity:1;transform:translateY(-24px) scale(1.28) rotate(8deg)}72%{transform:translateY(9px) scale(.91) rotate(-4deg)}88%{transform:translateY(-9px) scale(1.1) rotate(3deg)}100%{opacity:1;transform:translateY(0) scale(1) rotate(0)}}
+@keyframes rsvpSparkBurst{0%{opacity:.15;transform:scale(.4) rotate(-25deg)}55%{opacity:1;transform:scale(1.3) rotate(12deg)}100%{opacity:.65;transform:scale(.87) rotate(35deg)}}
+@media(prefers-reduced-motion:reduce){.rsvp-success-star,.rsvp-success-card,.rsvp-success-spark{animation:none!important;opacity:1!important;transform:none!important}}
 
-                    <div>
-                        <div class="flex justify-between mb-1">
-                            <span class="font-medium text-slate-700">การให้บริการของเจ้าหน้าที่ UMI</span>
-                            <span class="font-bold text-green-600">5 เต็ม (100%)</span>
-                        </div>
-                        <div class="w-full bg-slate-200 rounded-full h-3">
-                            <div class="bg-green-500 h-3 rounded-full bar-anim" style="width: 100%"></div>
-                        </div>
-                    </div>
+/* V6.2: consistent RSVP confirmation on desktop, tablet, and mobile */
+.rsvp-success-message span{display:block;}
+.rsvp-success-message span+span{margin-top:7px;}
+.rsvp-success:not([hidden]){display:grid!important;position:fixed!important;inset:0!important;z-index:2147483640!important;visibility:visible!important;opacity:1!important;}
+.rsvp-success:not([hidden]) .rsvp-success-card{opacity:1;visibility:visible;}
+.rsvp-success:not([hidden]) .rsvp-success-star{display:block;opacity:1;visibility:visible;}
+@media (prefers-reduced-motion: no-preference){
+.rsvp-success[data-celebrate="true"] .rsvp-success-star{animation:rsvpStarBigPop 1.25s cubic-bezier(.18,.78,.22,1) both!important;}
+.rsvp-success[data-celebrate="true"] .rsvp-success-card{animation:rsvpCardPop .45s ease-out both!important;}
+}
+@media (prefers-reduced-motion: reduce){
+.rsvp-success-star,.rsvp-success-card{animation:none!important;transform:none!important;opacity:1!important;}
+}
 
-                    <div>
-                        <div class="flex justify-between mb-1">
-                            <span class="font-medium text-slate-700">ด้านการบริการโดยรวม</span>
-                            <span class="font-bold text-green-600">5 เต็ม (100%)</span>
-                        </div>
-                        <div class="w-full bg-slate-200 rounded-full h-3">
-                            <div class="bg-green-500 h-3 rounded-full bar-anim" style="width: 100%"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+/* V7.3 – private video greeting section; separate from RSVP */
+.video-message{background:#fff4ee;min-height:85svh;display:flex;align-items:center;justify-content:center}
+.video-message .wrap{width:100%}
+.video-intro{max-width:540px;margin:0 auto 22px;line-height:1.6}
+.video-upload-card{width:min(100%,530px);margin:22px auto 0;padding:24px 20px 26px;background:#fffaf6;border:2px solid var(--red);border-radius:26px;box-shadow:0 8px 0 #910c2d12}
+.video-stars{display:flex;align-items:center;justify-content:center;margin-bottom:12px;animation:bob 4s ease-in-out infinite}.video-stars svg{display:block;width:176px;max-width:100%;height:42px}
+.video-direct-link{margin:22px auto 14px;display:inline-flex;max-width:100%;text-align:center}.video-upload-card h3{color:var(--red);margin:0 0 10px;font-size:21px}
+.video-setup{font-size:14px;color:#743d4d;line-height:1.6}
+.video-upload-frame{display:block;width:100%;min-height:430px;border:0;border-radius:16px;background:transparent}.video-upload-embedded{display:block;width:100%;height:600px;border:0;border-radius:16px;background:#fff;overflow:auto}.video-fallback{margin:16px 0 0;color:#703d4b;font-size:13px;text-align:center}.video-fallback summary{cursor:pointer;font-weight:800;color:var(--red);text-decoration:underline;text-underline-offset:3px}.video-fallback p{line-height:1.5}.video-fallback .pill{font-size:12px;padding:12px 18px;min-height:42px}.video-upload-card{max-width:600px}
+.video-upload-hint{font-size:12px;color:#703d4b;margin:12px 0 0;line-height:1.5}
+@media(max-width:480px){.video-upload-card{padding:20px 12px}.video-upload-frame{min-height:480px}.video-upload-embedded{height:650px}}
+@media(prefers-reduced-motion:reduce){.video-stars{animation:none!important}}
 
-            <!-- Section 2: Accommodation & Food -->
-            <section>
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="w-14 h-14 bg-indigo-500 text-white rounded-2xl flex items-center justify-center text-2xl shadow-md">
-                        <i class="fa-solid fa-utensils"></i>
-                    </div>
-                    <div>
-                        <h2 class="text-2xl font-bold text-slate-800">2. สถานที่พักและอาหาร</h2>
-                        <p class="text-slate-500">ผู้ร่วมทริปมีความพึงพอใจในที่พักและอาหารในระดับสูงมาก</p>
-                    </div>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div class="bg-indigo-50 p-5 rounded-2xl border border-indigo-100 text-center">
-                        <i class="fa-solid fa-bed text-3xl text-indigo-400 mb-3"></i>
-                        <h4 class="font-medium text-slate-700 mb-2">ความเหมาะสมของโรงแรม</h4>
-                        <div class="text-2xl font-bold text-indigo-600">86% <span class="text-sm font-normal text-slate-500">ให้ 5 คะแนน</span></div>
-                    </div>
-                    
-                    <div class="bg-indigo-50 p-5 rounded-2xl border border-indigo-100 text-center">
-                        <i class="fa-solid fa-mug-hot text-3xl text-indigo-400 mb-3"></i>
-                        <h4 class="font-medium text-slate-700 mb-2">ปริมาณอาหาร/เครื่องดื่ม</h4>
-                        <div class="text-2xl font-bold text-indigo-600">86% <span class="text-sm font-normal text-slate-500">ให้ 5 คะแนน</span></div>
-                    </div>
+/* V8.2 TEST — video recording/picking and client-side preview. */
+.video-choice-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:17px auto 16px}
+.video-choice-actions .pill{margin:0;flex:1 1 190px;font-size:12px;line-height:1.4;padding:13px 12px}
+.video-preview-area[hidden]{display:none!important}
+.video-preview-area{padding:15px 12px;margin:17px auto;background:#f8eee9;border:1.5px dashed #910c2d;border-radius:15px}
+.video-preview-area video{display:block;width:100%;max-height:340px;border-radius:10px;background:#181318}
+.video-preview-label,.video-upload-heading{font-size:13px;letter-spacing:.09em;font-weight:900;color:#910c2d}
+.video-upload-heading{margin:20px 0 8px}
+.video-preview-info{font-size:12px;color:#703d4b;overflow-wrap:anywhere}
+.video-clear-btn{padding:8px 10px;background:transparent;border:1px solid #910c2d;border-radius:30px;color:#910c2d;cursor:pointer;font-weight:800}
+.video-test-honesty{font-size:12px;line-height:1.6;color:#743d4d;background:#fff1db;border-radius:13px;padding:12px;text-align:left}
+@media(max-width:480px){.video-choice-actions{flex-direction:column}.video-choice-actions .pill{flex:unset;width:100%}}
+</style></head><body><a class="skip" href="#details">Skip invitation</a>
+<section class="hero" id="home"><div class="walk-zone" aria-hidden="true"><img class="walking-stars" id="walkingStars" src="assets/run-0.png" alt=""></div><div class="cloud one"></div><div class="cloud two"></div><span class="floating-star a"><svg viewBox="0 0 48 48" width="30" height="30" aria-hidden="true"><path fill="#910c2d" d="M24 3 C28 17 31 20 45 24 C31 28 28 31 24 45 C20 31 17 28 3 24 C17 20 20 17 24 3Z"/></svg></span><span class="floating-star b"><svg viewBox="0 0 48 48" width="30" height="30" aria-hidden="true"><g stroke="#910c2d" stroke-width="3" stroke-linecap="round"><path d="M24 2V14 M24 34V46 M2 24H14 M34 24H46 M8 8L16 16 M32 32L40 40 M40 8L32 16 M16 32L8 40"/></g><circle cx="24" cy="24" r="5" fill="#910c2d"/></svg></span><span class="floating-star c"><svg viewBox="0 0 48 48" width="30" height="30" aria-hidden="true"><path fill="#910c2d" d="M24 3 C28 17 31 20 45 24 C31 28 28 31 24 45 C20 31 17 28 3 24 C17 20 20 17 24 3Z"/></svg></span><div class="hero-inner"><div class="mini">A LITTLE LOVE, A LOT OF FUN</div><img class="hero-card" tabindex="0" src="assets/invitation.jpg" alt="Official Palm and Pun wedding invitation for 28 November 2026 at Milestone Studio" fetchpriority="high"><a class="pill" href="#details">OPEN INVITATION ↓</a><span class="hint">Scroll down to discover our wedding day</span></div></section>
+<audio id="weddingMusic" preload="none" loop src="assets/wedding-violin.mp3"></audio><button id="musicButton" class="music-toggle" type="button" aria-pressed="false" aria-label="Play wedding music">♫ PLAY MUSIC</button><nav aria-label="Wedding page navigation"><a href="#home">HOME</a><a href="#timeline">OUR DAY</a><a href="#dress">DRESS</a><a href="#location">MAP</a><a href="#rsvp">RSVP</a><a href="#video-message">VIDEO ♡</a></nav>
+<section class="section details" id="details"><div class="wrap fade"><span class="eyebrow">YOU'RE INVITED</span><h1 class="title">PALM & PUN</h1><p class="sub">are getting married — and you're part of the celebration!</p><div class="stamp"><div class="eyebrow">SAVE THE DATE</div><div class="date">28.11.2026</div><div class="countdown countdown-inside" aria-label="Countdown to 28 November 2026 at 4 PM Thailand time"><span class="countdown-kicker">COUNTING DOWN TO OUR BIG DAY ✦</span><div class="countdown-grid" role="timer" aria-live="off"><div class="countdown-unit"><strong id="countDays">--</strong><small>DAYS</small></div><div class="countdown-unit"><strong id="countHours">--</strong><small>HOURS</small></div><div class="countdown-unit"><strong id="countMinutes">--</strong><small>MINUTES</small></div><div class="countdown-unit"><strong id="countSeconds">--</strong><small>SECONDS</small></div></div><p class="countdown-complete" id="countComplete" hidden>IT'S OUR WEDDING DAY! ♡</p></div></div><div class="cta-row"><a class="pill" href="#location">GET DIRECTIONS ↗</a><a class="pill secondary" href="#timeline">VIEW OUR DAY ↓</a></div></div><div class="details-walk-zone" aria-hidden="true"><img class="details-walker" id="inviteWalker" src="assets/invite-walk-0.png" alt=""></div></section>
+<section class="section timeline" id="timeline"><div class="wrap fade"><span class="eyebrow">HERE'S THE PLAN</span><h2 class="title">OUR WEDDING DAY</h2><p class="sub">A little ceremony, good food, lovely people, and a whole lot of fun.</p><div class="timeline-list"><div class="event"><div class="spark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false"><path fill="#7eb4d5" d="M24 3 C27 15 33 21 45 24 C33 27 27 33 24 45 C21 33 15 27 3 24 C15 21 21 15 24 3Z"/></svg></div><button class="event-art event-art-guests" type="button" data-sprite="guests" aria-label="Play guests arrive animation"><img src="assets/sprite-guests-0.png" loading="lazy" alt="Animated white star illustration for guests arrive"></button><div class="event-copy"><div class="time">4:00 PM</div><h3>GUESTS ARRIVE</h3></div></div><div class="event"><div class="spark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false"><g stroke="#7eb4d5" stroke-width="3.3" stroke-linecap="round"><path d="M24 3V13 M24 35V45 M3 24H13 M35 24H45 M9 9L16 16 M32 32L39 39 M39 9L32 16 M16 32L9 39"/></g><circle cx="24" cy="24" r="4.5" fill="#7eb4d5"/></svg></div><button class="event-art event-art-vow" type="button" data-sprite="vow" aria-label="Play vow ceremony animation"><img src="assets/sprite-vow-0.png" loading="lazy" alt="Animated white star illustration for vow ceremony"></button><div class="event-copy"><div class="time">4:30 PM</div><h3>VOW CEREMONY</h3></div></div><div class="event"><div class="spark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false"><path fill="#7eb4d5" d="M24 3 C27 15 33 21 45 24 C33 27 27 33 24 45 C21 33 15 27 3 24 C15 21 21 15 24 3Z"/></svg></div><button class="event-art event-art-dinner" type="button" data-sprite="dinner" aria-label="Play dinner and speeches animation"><img src="assets/sprite-dinner-0.png" loading="lazy" alt="Animated white star illustration for dinner and speeches"></button><div class="event-copy"><div class="time">6:00 PM</div><h3>DINNER + SPEECHES</h3></div></div><div class="event"><div class="spark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false"><g stroke="#7eb4d5" stroke-width="3.3" stroke-linecap="round"><path d="M24 3V13 M24 35V45 M3 24H13 M35 24H45 M9 9L16 16 M32 32L39 39 M39 9L32 16 M16 32L9 39"/></g><circle cx="24" cy="24" r="4.5" fill="#7eb4d5"/></svg></div><button class="event-art event-art-party" type="button" data-sprite="party" aria-label="Play party animation"><img src="assets/sprite-party-0.png" loading="lazy" alt="Animated white star illustration for party time"></button><div class="event-copy"><div class="time">7:00 PM</div><h3>NOW IT'S A PARTY!</h3></div></div></div></div></section>
+<section class="section dress" id="dress"><div class="wrap fade"><span class="eyebrow">A LITTLE NOTE</span><h2 class="title">DRESS HAPPY!</h2><img class="star-img" src="assets/dress-star.png" alt="Blue star with Palm and Pun red wedding monogram" loading="lazy"><div class="statement">COME AS YOU ARE</div><p class="sub">No dress code, just dress happy.<br>Wear whatever makes you feel like celebrating!</p><p class="dress-remark">A little note: Thinking of wearing all white?<br>Add a splash of color for us today! ♡</p></div></section>
+<section class="section venue" id="location"><div class="wrap fade"><span class="eyebrow">COME FIND US</span><h2 class="title">LOCATION</h2><div class="venue-card"><span aria-hidden="true" style="font-size:40px">✦</span><p class="sub">Here’s where we’ll celebrate together!</p><div class="venue-map"><iframe title="Palm and Pun wedding location preview" src="https://www.google.com/maps/d/embed?mid=1dzSoQIOZci9iMy1yUvM7Icn-HaUbPF4&amp;ll=13.849767444457344%2C100.62674579999998&amp;z=17" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div><p class="venue-map-note">Explore the map below, or tap the button for directions.</p><a class="pill" href="https://www.google.com/maps/d/edit?hl=en&amp;mid=1dzSoQIOZci9iMy1yUvM7Icn-HaUbPF4&amp;ll=13.849767444457344%2C100.62674579999998&amp;z=18" target="_blank" rel="noopener noreferrer">OPEN WEDDING MAP ↗</a></div></div></section>
+<section class="section rsvp" id="rsvp"><div class="wrap fade"><span class="eyebrow">WE'D LOVE TO SEE YOU</span><h2 class="title">WILL YOU JOIN US?</h2><p class="sub">Let us know you'll be there!</p><div class="rsvp-box"><form id="rsvpForm"><label for="guest">YOUR NAME</label><p class="field-hint">Tell us the name we know you by ♡</p><input id="guest" name="guest" placeholder="The name we call you" required autocomplete="name" maxlength="100"><label for="attendance">WILL YOU BE THERE?</label><select id="attendance" name="attendance" required><option value="yes">YES, I’LL BE THERE! ♡</option><option value="no">SORRY, I CAN’T MAKE IT</option></select><div id="guestCountGroup"><label for="count">NUMBER OF GUESTS</label><select id="count" name="count"><option>1</option><option>2</option><option>3</option><option>4</option></select></div><label for="message">LEAVE US A LITTLE MESSAGE ♡</label><textarea id="message" name="message" placeholder="Leave us a little message (optional)" rows="4" maxlength="500"></textarea><button type="submit" class="pill">CONFIRM MY RSVP ♡</button></form><iframe id="rsvpResponseFrame" name="rsvpResponseFrame" title="RSVP confirmation receiver" tabindex="-1" aria-hidden="true" hidden style="display:none"></iframe><p class="status" id="reply" role="status" aria-live="polite">Please review your details before confirming. ♡</p></div></div></section>
+<div class="rsvp-success" id="rsvpSuccessModal" role="dialog" aria-modal="true" aria-labelledby="rsvpSuccessTitle" aria-describedby="rsvpSuccessMessage" hidden>
+  <div class="rsvp-success-card" tabindex="-1">
+    <span class="rsvp-success-spark left" aria-hidden="true">✦</span><span class="rsvp-success-spark right" aria-hidden="true">✧</span>
+    <img class="rsvp-success-star" src="assets/dress-star.png" alt="Palm &amp; Pun wedding star">
+    <h2 class="rsvp-success-title" id="rsvpSuccessTitle">THANK YOU! ♡</h2>
+    <p class="rsvp-success-message" id="rsvpSuccessMessage"><span>Your RSVP has been received.</span><span>We can't wait to celebrate with you!</span></p>
+    <p class="rsvp-success-name" id="rsvpSuccessName"></p>
+    <button type="button" class="rsvp-success-close" id="rsvpSuccessClose">BACK TO INVITATION ↑</button>
+  </div>
+</div>
+<section class="section video-message" id="video-message"><div class="wrap fade">
+<span class="eyebrow">A LITTLE MEMORY FROM YOU</span>
+<h2 class="title">SEND US A LITTLE VIDEO ♡</h2>
+<p class="sub video-intro">A tiny hello, a funny story, or a wish for our big day.<br>We'd love to hear from you!</p>
+<div class="video-upload-card">
+  <div class="video-stars" aria-hidden="true"><svg viewBox="0 0 176 42" width="176" height="42" xmlns="http://www.w3.org/2000/svg" focusable="false"><g fill="#910c2d"><path d="M24 3 Q29 18 44 21 Q29 24 24 39 Q19 24 4 21 Q19 18 24 3Z"/><path d="M152 3 Q157 18 172 21 Q157 24 152 39 Q147 24 132 21 Q147 18 152 3Z"/></g><path d="M88 2 L92 13 L103 8 L98 19 L110 22 L98 25 L103 36 L92 31 L88 42 L84 31 L73 36 L78 25 L66 22 L78 19 L73 8 L84 13Z" fill="#7eb4d5" stroke="#910c2d" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+  <h3>YOUR VIDEO MESSAGE</h3>
+  <p class="video-setup">Record a new clip or choose one you already have. Preview it before uploading. ♡</p>
+  <div class="video-choice-actions">
+    <button class="pill video-record-btn" type="button" id="recordVideoBtn">◉ RECORD A VIDEO</button>
+    <button class="pill secondary video-choose-btn" type="button" id="chooseVideoBtn">↑ UPLOAD A VIDEO</button>
+  </div>
+  <input id="recordVideoInput" type="file" accept="video/*" capture="environment" hidden>
+  <input id="chooseVideoInput" type="file" accept="video/*" hidden>
+  <div id="videoPreviewArea" class="video-preview-area" hidden>
+    <p class="video-preview-label">YOUR VIDEO PREVIEW</p>
+    <video id="selectedVideoPreview" controls playsinline preload="metadata"></video>
+    <p id="selectedVideoInfo" class="video-preview-info"></p>
+    <button id="clearVideoBtn" type="button" class="video-clear-btn">CHOOSE ANOTHER VIDEO ↺</button>
+  </div>
+  <p class="video-test-honesty">NEXT STEP: Use the private upload form below to send your video. For this test, you'll need to choose the video again in that form. A preview here does not send or save the clip.</p>
+  <h4 class="video-upload-heading">SEND YOUR VIDEO ♡</h4>
+  <iframe class="video-upload-embedded" id="videoUploadEmbedded" src="https://script.google.com/macros/s/AKfycbzy094i4YUt-7i6kioJaFhm08UJuWMMbyaJg3znsJmNLWKbXSc_l_7uSMkDCSt50kdV/exec" title="Upload a private video message for Palm and Pun" loading="eager" referrerpolicy="strict-origin-when-cross-origin" allow="camera; microphone"></iframe>
+  <p class="video-upload-hint">Please wait until you see THANK YOU! ♡ before leaving this page.</p>
+  <details class="video-fallback"><summary>UPLOAD FORM NOT SHOWING?</summary><p>Some browsers may block embedded forms. You can still upload your video using our secure form.</p><a class="pill video-direct-link" href="https://script.google.com/macros/s/AKfycbzy094i4YUt-7i6kioJaFhm08UJuWMMbyaJg3znsJmNLWKbXSc_l_7uSMkDCSt50kdV/exec" target="_blank" rel="noopener noreferrer">OPEN UPLOAD FORM ↗</a></details>
+  <p class="video-upload-hint">Already sent your RSVP? No need to do it again. Video messages are optional and kept privately for Palm &amp; Pun.</p>
+</div></div></section>
+<section class="section closing" id="closing"><div class="wrap fade"><img src="assets/closing-calendar-star.png" loading="lazy" alt="Blue star calendar marking 28 November"><h2 class="title closing-headline"><span class="closing-desktop"><span>SEE YOU AT</span><span>OUR LITTLE BIG PARTY!</span></span></h2><p class="sub">With love,<br><b>PALM & PUN</b></p><a class="pill secondary" href="#home">BACK TO TOP ↑</a></div></section><footer class="footer">PALM & PUN · 28 NOVEMBER 2026 · MADE WITH LOVE ✦</footer>
+<script>const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.fade').forEach(el=>observer.observe(el));const attendanceSelect=document.querySelector('#attendance');const guestCountGroup=document.querySelector('#guestCountGroup');const guestCountSelect=document.querySelector('#count');function updateGuestCountVisibility(){const isComing=attendanceSelect.value==='yes';guestCountGroup.hidden=!isComing;guestCountSelect.disabled=!isComing;}attendanceSelect.addEventListener('change',updateGuestCountVisibility);updateGuestCountVisibility();const RSVP_ENDPOINT='https://script.google.com/macros/s/AKfycbwYtnoGV9Ag_a4daHIZbW-RThSJpNKerFozk4qI1I5QWno2HAhS84R5wniQNaeHkjtP/exec';
+const rsvpForm=document.querySelector('#rsvpForm');
+const rsvpFrame=document.querySelector('#rsvpResponseFrame');
+const rsvpReply=document.querySelector('#reply');
+const rsvpSubmit=rsvpForm.querySelector('button[type="submit"]');
+const rsvpSuccessModal=document.querySelector('#rsvpSuccessModal');
+const rsvpSuccessTitle=document.querySelector('#rsvpSuccessTitle');
+const rsvpSuccessMessage=document.querySelector('#rsvpSuccessMessage');
+const rsvpSuccessName=document.querySelector('#rsvpSuccessName');
+const rsvpSuccessClose=document.querySelector('#rsvpSuccessClose');
+let lastRsvpFocus=null;
+function showRsvpSuccess(name,isComing){
+  lastRsvpFocus=document.activeElement;
+  rsvpSuccessTitle.textContent = "THANK YOU! ♡";
+  rsvpSuccessMessage.replaceChildren();
+  const lineOne=document.createElement("span");
+  const lineTwo=document.createElement("span");
+  lineOne.textContent="Your RSVP has been received.";
+  lineTwo.textContent=isComing ? "We can't wait to celebrate with you!" : "We'll miss you at the party!";
+  rsvpSuccessMessage.append(lineOne,lineTwo);
+  rsvpSuccessName.textContent=name ? 'Thank you, '+name+'! ♡' : '';
+  rsvpSuccessModal.hidden=false;
+  rsvpSuccessModal.style.display="grid";
+  rsvpSuccessModal.removeAttribute('data-celebrate');
+  void rsvpSuccessModal.offsetWidth;
+  rsvpSuccessModal.setAttribute('data-celebrate','true');
+  document.body.classList.add('rsvp-modal-open');
+  rsvpSuccessClose.focus();
+}
+function closeRsvpSuccess(){
+  rsvpSuccessModal.hidden=true;
+  rsvpSuccessModal.style.removeProperty("display");
+  rsvpSuccessModal.removeAttribute('data-celebrate');
+  document.body.classList.remove('rsvp-modal-open');
+  if(lastRsvpFocus && lastRsvpFocus.isConnected)lastRsvpFocus.focus();
+}
+rsvpSuccessClose.addEventListener('click',closeRsvpSuccess);
+rsvpSuccessModal.addEventListener('click',e=>{if(e.target===rsvpSuccessModal)closeRsvpSuccess()});
+rsvpSuccessModal.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){e.preventDefault();closeRsvpSuccess();}
+  if(e.key==='Tab'){e.preventDefault();rsvpSuccessClose.focus();}
+});
 
-                    <div class="bg-indigo-50 p-5 rounded-2xl border border-indigo-100 text-center">
-                        <i class="fa-solid fa-star-half-stroke text-3xl text-indigo-400 mb-3"></i>
-                        <h4 class="font-medium text-slate-700 mb-2">คุณภาพอาหาร/เครื่องดื่ม</h4>
-                        <div class="text-2xl font-bold text-indigo-600">71% <span class="text-sm font-normal text-slate-500">ให้ 5 คะแนน</span></div>
-                        <div class="text-sm text-slate-500 mt-1">(อีก 29% ให้ 4 คะแนน)</div>
-                    </div>
-                </div>
-            </section>
+let rsvpPending=null;
+let pendingSubmissionId=null;
+function makeSubmissionId(){
+  if(window.crypto&&crypto.randomUUID)return crypto.randomUUID();
+  const bytes=new Uint8Array(16);
+  if(window.crypto&&crypto.getRandomValues)crypto.getRandomValues(bytes);
+  else throw new Error('Secure browser required');
+  return Array.from(bytes,b=>b.toString(16).padStart(2,'0')).join('');
+}
+function isGoogleResponseOrigin(origin){
+  try{
+    const url=new URL(origin);
+    return url.protocol==='https:' && (
+      url.hostname==='script.google.com' ||
+      url.hostname==='script.googleusercontent.com' ||
+      url.hostname.endsWith('.googleusercontent.com')
+    );
+  }catch(_){return false;}
+}
+function finishRsvp(success,message){
+  if(!rsvpPending)return;
+  clearTimeout(rsvpPending.timer);
+  clearInterval(rsvpPending.poller);
+  rsvpPending=null;
+  rsvpSubmit.disabled=false;
+  rsvpSubmit.textContent='CONFIRM MY RSVP ♡';
+  rsvpReply.textContent=message;
+  if(success){
+    pendingSubmissionId=null;
+    rsvpForm.reset();
+    updateGuestCountVisibility();
+  }
+}
+// Independent verification: query only the saved status of this random submission ID.
+// A JSONP script tag is used because Apps Script ContentService does not send CORS headers.
+function verifyRsvpById(id){
+  if(!rsvpPending || rsvpPending.id!==id)return;
+  const callbackName='palmPunRsvpStatus_'+id.replace(/[^a-zA-Z0-9_]/g,'');
+  const script=document.createElement('script');
+  let settled=false;
+  const cleanup=()=>{delete window[callbackName];script.remove();};
+  const timeout=setTimeout(()=>{if(!settled){settled=true;cleanup();}},6500);
+  window[callbackName]=function(result){
+    if(settled)return;
+    settled=true;clearTimeout(timeout);cleanup();
+    if(!rsvpPending || rsvpPending.id!==id)return;
+    if(result && result.submissionId===id && result.saved===true){
+      const confirmedName=document.querySelector('#guest').value.trim();
+      const confirmedAttendance=attendanceSelect.value==='yes';
+      finishRsvp(true,'THANK YOU! ♡ Your RSVP has been received.');
+      showRsvpSuccess(confirmedName,confirmedAttendance);
+    }
+  };
+  script.onerror=()=>{if(!settled){settled=true;clearTimeout(timeout);cleanup();}};
+  script.src=RSVP_ENDPOINT+'?action=status&id='+encodeURIComponent(id)+'&callback='+encodeURIComponent(callbackName)+'&t='+Date.now();
+  document.head.appendChild(script);
+}
+window.addEventListener('message',event=>{
+  if(!rsvpPending)return;
+  // Apps Script HTMLService may relay through a sandboxed iframe with an
+  // opaque ("null") origin. Match the random one-time submission ID instead;
+  // unknown origins are accepted only for the expected result with this ID.
+  if(event.origin !== 'null' && !isGoogleResponseOrigin(event.origin))return;
+  const data=event.data;
+  if(!data || data.type!=='PALM_PUN_RSVP_RESULT' || data.submissionId!==rsvpPending.id)return;
+  // HTMLService can nest iframes; token and origin are checked above.
+  if(data.success===true){
+    const confirmedName=document.querySelector('#guest').value.trim();
+    const confirmedAttendance=attendanceSelect.value==='yes';
+    finishRsvp(true,'THANK YOU! ♡ Your RSVP has been received.');
+    showRsvpSuccess(confirmedName,confirmedAttendance);
+  }else{
+    finishRsvp(false,'We could not confirm your RSVP. Please try again or contact us.');
+  }
+});
+rsvpForm.addEventListener('input',()=>{if(!rsvpPending) pendingSubmissionId=null;});
+rsvpForm.addEventListener('change',()=>{if(!rsvpPending) pendingSubmissionId=null;});
+rsvpForm.addEventListener('submit',event=>{
+  event.preventDefault();
+  if(rsvpPending)return;
+  const name=document.querySelector('#guest').value.trim();
+  const isComing=attendanceSelect.value==='yes';
+  const guests=isComing?Number(guestCountSelect.value):0;
+  const message=document.querySelector('#message').value.trim();
+  if(!name || name.length>100 || message.length>500 || (isComing && !(guests>=1 && guests<=4))) {
+    rsvpReply.textContent='Please check your name, guest count, and message.';
+    return;
+  }
+  try{
+    if(!pendingSubmissionId)pendingSubmissionId=makeSubmissionId();
+  }catch(_){rsvpReply.textContent='Please use a secure browser to submit your RSVP.';return;}
+  const id=pendingSubmissionId;
+  rsvpSubmit.disabled=true;
+  rsvpSubmit.textContent='SENDING… PLEASE WAIT ♡';
+  rsvpReply.textContent='Just a little moment… ♡ We’re saving your RSVP.';
+  const payload={name,attendance:isComing?'Yes':'No',guests,message,submissionId:id};
+  // Native form POST to a hidden iframe avoids a cross-origin fetch response issue.
+  const postForm=document.createElement('form');
+  postForm.method='POST';postForm.action=RSVP_ENDPOINT;
+  postForm.target=rsvpFrame.name;
+  postForm.style.display='none';
+  Object.entries(payload).forEach(([key,value])=>{
+    const input=document.createElement('input');
+    input.type='hidden';input.name=key;input.value=String(value);
+    postForm.appendChild(input);
+  });
+  document.body.appendChild(postForm);
+  const timer=setTimeout(()=>{
+    clearInterval(rsvpPending?.poller);
+    finishRsvp(false,'We could not verify the response. Please check with us before trying again; the RSVP may have been saved.');
+  },30000);
+  rsvpPending={id,timer,poller:null};
+  try{postForm.submit();
+    setTimeout(()=>verifyRsvpById(id),2300);
+    rsvpPending.poller=setInterval(()=>verifyRsvpById(id),6500);
+  }
+  catch(_){finishRsvp(false,'Unable to send your RSVP. Please try again.');}
+  finally{postForm.remove();}
+});
+const music=document.querySelector('#weddingMusic');const musicButton=document.querySelector('#musicButton');music.volume=.55;musicButton.addEventListener('click',async()=>{if(!music.paused){music.pause();musicButton.textContent='♫ PLAY MUSIC';musicButton.setAttribute('aria-pressed','false');musicButton.setAttribute('aria-label','Play wedding music');return;}try{await music.play();musicButton.textContent='❚❚ PAUSE MUSIC';musicButton.setAttribute('aria-pressed','true');musicButton.setAttribute('aria-label','Pause wedding music');}catch(err){musicButton.textContent='♫ TAP TO TRY AGAIN';}});document.addEventListener('visibilitychange',()=>{if(document.hidden&&!music.paused){music.pause();musicButton.textContent='♫ PLAY MUSIC';musicButton.setAttribute('aria-pressed','false');}});const dancer=document.querySelector('#walkingStars');let frame=0;let walkerInterval;const inviteWalker=document.querySelector('#inviteWalker');let inviteFrame=0;let inviteInterval;if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){walkerInterval=setInterval(()=>{frame=(frame+1)%8;dancer.src='assets/run-'+frame+'.png'},145);inviteInterval=setInterval(()=>{inviteFrame=(inviteFrame+1)%4;inviteWalker.src='assets/invite-walk-'+inviteFrame+'.png'},180);}else{dancer.src='assets/run-0.png';if(inviteWalker)inviteWalker.src='assets/invite-walk-0.png';} const weddingTimestamp=new Date('2026-11-28T16:00:00+07:00').getTime();const cdFields=[document.getElementById('countDays'),document.getElementById('countHours'),document.getElementById('countMinutes'),document.getElementById('countSeconds')];const cdComplete=document.getElementById('countComplete');function updateWeddingCountdown(){const remaining=Math.max(0,weddingTimestamp-Date.now());const totalSeconds=Math.floor(remaining/1000);const days=Math.floor(totalSeconds/86400);const hours=Math.floor(totalSeconds%86400/3600);const minutes=Math.floor(totalSeconds%3600/60);const seconds=totalSeconds%60;[days,hours,minutes,seconds].forEach((value,i)=>{cdFields[i].textContent=String(value).padStart(2,'0')});if(remaining===0){cdComplete.hidden=false;}}updateWeddingCountdown();setInterval(updateWeddingCountdown,1000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)updateWeddingCountdown();});
+const prefersReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const timelineSprites={
+  guests:['assets/sprite-guests-0.png','assets/sprite-guests-1.png','assets/sprite-guests-2.png','assets/sprite-guests-3.png'],
+  vow:['assets/sprite-vow-0.png','assets/sprite-vow-1.png','assets/sprite-vow-2.png','assets/sprite-vow-3.png'],
+  dinner:['assets/sprite-dinner-0.png','assets/sprite-dinner-1.png','assets/sprite-dinner-2.png','assets/sprite-dinner-3.png'],
+  party:['assets/sprite-party-0.png','assets/sprite-party-1.png','assets/sprite-party-2.png','assets/sprite-party-3.png']
+};
+function attachSpriteAnimation(button,{autoLoop=false}={}){
+  const spriteName=button.dataset.sprite;
+  const frames=timelineSprites[spriteName];
+  const img=button.querySelector('img');
+  if(!frames||!img)return;
+  img.src=frames[0];
+  let intervalId=null;
+  let stopTimer=null;
+  let frameIndex=0;
+  function setFrame(index){
+    frameIndex=index%frames.length;
+    img.src=frames[frameIndex];
+  }
+  function clearPlaybackTimers(){
+    clearInterval(intervalId);
+    clearTimeout(stopTimer);
+    intervalId=null;
+    stopTimer=null;
+  }
+  function stopPlayback({keepCurrentFrame=false}={}){
+    clearPlaybackTimers();
+    if(!keepCurrentFrame){
+      setFrame(0);
+    }
+    if(!autoLoop){
+      button.classList.remove('is-playing');
+    }
+  }
+  function startLoop(){
+    clearPlaybackTimers();
+    button.classList.add('is-playing');
+    intervalId=setInterval(()=>{
+      setFrame(frameIndex+1);
+    },180);
+  }
+  function playPlayback(){
+    if(prefersReducedMotion)return;
+    frameIndex=0;
+    setFrame(0);
+    startLoop();
+    if(!autoLoop){
+      stopTimer=setTimeout(()=>stopPlayback(),frames.length*180*2);
+    }
+  }
+  if(!autoLoop){
+    button.addEventListener('mouseenter',playPlayback);
+    button.addEventListener('focus',playPlayback);
+    button.addEventListener('click',playPlayback);
+    button.addEventListener('touchstart',playPlayback,{passive:true});
+    button.addEventListener('mouseleave',()=>{if(!button.classList.contains('is-playing'))stopPlayback();});
+    button.addEventListener('blur',()=>{if(!button.classList.contains('is-playing'))stopPlayback();});
+  } else if(!prefersReducedMotion){
+    playPlayback();
+    button.addEventListener('click',playPlayback);
+    button.addEventListener('touchstart',playPlayback,{passive:true});
+  }
+}
+document.querySelectorAll('.timeline .event-art[data-sprite]').forEach(button=>{
+  attachSpriteAnimation(button,{autoLoop:true});
+});
 
-            <!-- Section 3: Tour Program -->
-            <section>
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="w-14 h-14 bg-orange-500 text-white rounded-2xl flex items-center justify-center text-2xl shadow-md">
-                        <i class="fa-solid fa-map-location-dot"></i>
-                    </div>
-                    <div>
-                        <h2 class="text-2xl font-bold text-slate-800">3. โปรแกรมการท่องเที่ยว</h2>
-                        <p class="text-slate-500">ส่วนใหญ่อยู่ในเกณฑ์ดี (4 คะแนน) แต่มีจุดที่ต้องพัฒนาเรื่องการเดินทาง</p>
-                    </div>
-                </div>
-                
-                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 space-y-6">
-                    <div>
-                        <h4 class="font-medium text-slate-700 mb-3">ภาพรวมโปรแกรมท่องเที่ยว</h4>
-                        <div class="flex h-6 rounded-full overflow-hidden">
-                            <div class="bg-blue-500 flex items-center justify-center text-white text-xs font-bold" style="width: 86%">4 คะแนน (86%)</div>
-                            <div class="bg-green-500 flex items-center justify-center text-white text-xs font-bold" style="width: 14%">5 (14%)</div>
-                        </div>
-                    </div>
 
-                    <div>
-                        <h4 class="font-medium text-slate-700 mb-3">ความน่าสนใจของสถานที่ (คะแนนเฉลี่ยดี)</h4>
-                        <div class="flex h-6 rounded-full overflow-hidden">
-                            <div class="bg-blue-500 flex items-center justify-center text-white text-xs font-bold" style="width: 57%">4 คะแนน (57%)</div>
-                            <div class="bg-green-500 flex items-center justify-center text-white text-xs font-bold" style="width: 43%">5 คะแนน (43%)</div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h4 class="font-medium text-slate-700 mb-3 flex items-center gap-2">
-                            ความเหมาะสมของระยะเวลาเดินทาง <i class="fa-solid fa-circle-exclamation text-orange-500"></i>
-                        </h4>
-                        <p class="text-sm text-slate-500 mb-2">เป็นหัวข้อเดียวที่มีการให้ 3 คะแนน (ควรปรับปรุง)</p>
-                        <div class="flex h-6 rounded-full overflow-hidden">
-                            <div class="bg-orange-400 flex items-center justify-center text-white text-xs font-bold" style="width: 14%">3 (14%)</div>
-                            <div class="bg-blue-500 flex items-center justify-center text-white text-xs font-bold" style="width: 43%">4 (43%)</div>
-                            <div class="bg-green-500 flex items-center justify-center text-white text-xs font-bold" style="width: 43%">5 (43%)</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Section 4: Feedback -->
-            <section class="mt-10 pt-10 border-t border-slate-200">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold text-slate-800">เสียงจากลูกค้า (Feedback)</h2>
-                    <p class="text-slate-500 mt-2">ข้อคิดเห็นและข้อเสนอแนะเพื่อการพัฒนาทริปในอนาคต</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Pros -->
-                    <div class="bg-emerald-50 rounded-2xl p-6 border border-emerald-100 relative overflow-hidden">
-                        <div class="absolute -right-4 -top-4 text-emerald-200 opacity-30 text-8xl">
-                            <i class="fa-solid fa-thumbs-up"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-emerald-700 mb-4 flex items-center gap-2 relative z-10">
-                            <i class="fa-solid fa-circle-check"></i> สิ่งที่ทำได้ดี (คำชม)
-                        </h3>
-                        <ul class="space-y-3 relative z-10">
-                            <li class="flex items-start gap-3 text-slate-700">
-                                <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
-                                <span><strong>การบริการ:</strong> ดูแลดีมาก อาหารอิ่มอร่อยทุกมื้อ</span>
-                            </li>
-                            <li class="flex items-start gap-3 text-slate-700">
-                                <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
-                                <span><strong>ที่พัก:</strong> การจัดให้พักแบบวิลล่าถือเป็นความแปลกใหม่และดีกว่าทริปที่ผ่านๆ มา</span>
-                            </li>
-                            <li class="flex items-start gap-3 text-slate-700">
-                                <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
-                                <span><strong>ภาพรวมบริษัท:</strong> ทำได้ดีขึ้นเรื่อยๆ สู้กับคู่แข่งได้สบาย เพราะกลุ่มเป้าหมายชัดเจน ทำให้ลูกทัวร์เข้ากันได้และสนุกสนาน</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Cons / Suggestions -->
-                    <div class="bg-rose-50 rounded-2xl p-6 border border-rose-100 relative overflow-hidden">
-                        <div class="absolute -right-4 -top-4 text-rose-200 opacity-30 text-8xl">
-                            <i class="fa-regular fa-lightbulb"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-rose-700 mb-4 flex items-center gap-2 relative z-10">
-                            <i class="fa-solid fa-wrench"></i> สิ่งที่ควรปรับปรุง
-                        </h3>
-                        <ul class="space-y-3 relative z-10">
-                            <li class="flex items-start gap-3 text-slate-700">
-                                <i class="fa-solid fa-arrow-right text-rose-500 mt-1"></i>
-                                <span><strong>การเดินทาง:</strong> ควรลดระยะเวลาการนั่งรถ หรือลดระยะเวลาการเดินทางระหว่างทริปลง</span>
-                            </li>
-                            <li class="flex items-start gap-3 text-slate-700">
-                                <i class="fa-solid fa-arrow-right text-rose-500 mt-1"></i>
-                                <span><strong>ที่พัก:</strong> ควรลดการย้ายที่พักบ่อยๆ เพื่อความสะดวกสบาย</span>
-                            </li>
-                            <li class="flex items-start gap-3 text-slate-700">
-                                <i class="fa-solid fa-arrow-right text-rose-500 mt-1"></i>
-                                <span><strong>เนื้อหาทริป:</strong> อยากให้มีการจัดโปรแกรมที่พาเจาะลึกสถานที่ท่องเที่ยวเพิ่มขึ้นอีกเล็กน้อย</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-        </div>
-
-        <!-- Footer -->
-        <footer class="bg-slate-800 text-slate-400 text-center py-6 mt-4">
-            <p class="text-sm">จัดทำจากข้อมูลแบบฟอร์มความพึงพอใจเกี่ยวกับการท่องเที่ยว ปี 2026</p>
-        </footer>
-    </div>
-
-</body>
-</html>
+// V8.2 TEST: browser camera/file chooser with local preview only.
+(function(){
+  const recordBtn=document.getElementById('recordVideoBtn');
+  const chooseBtn=document.getElementById('chooseVideoBtn');
+  const recordInput=document.getElementById('recordVideoInput');
+  const chooseInput=document.getElementById('chooseVideoInput');
+  const area=document.getElementById('videoPreviewArea');
+  const preview=document.getElementById('selectedVideoPreview');
+  const info=document.getElementById('selectedVideoInfo');
+  const clear=document.getElementById('clearVideoBtn');
+  if(!recordBtn||!chooseBtn)return;
+  let objectUrl=null;
+  function reset(){
+    preview.pause();preview.removeAttribute('src');preview.load();
+    if(objectUrl){URL.revokeObjectURL(objectUrl);objectUrl=null;}
+    recordInput.value='';chooseInput.value='';area.hidden=true;
+  }
+  function onFile(input){
+    const f=input.files&&input.files[0];if(!f)return;
+    if(!f.type.startsWith('video/')){alert('Please select a video file.');input.value='';return;}
+    reset();objectUrl=URL.createObjectURL(f);preview.src=objectUrl;
+    const mb=(f.size/1048576).toFixed(1);
+    info.textContent=f.name+' · '+mb+' MB — Preview only. Select this file again in the upload form below.';
+    area.hidden=false;area.scrollIntoView({behavior:'smooth',block:'nearest'});
+  }
+  recordBtn.addEventListener('click',()=>recordInput.click());
+  chooseBtn.addEventListener('click',()=>chooseInput.click());
+  recordInput.addEventListener('change',()=>onFile(recordInput));
+  chooseInput.addEventListener('change',()=>onFile(chooseInput));
+  clear.addEventListener('click',reset);
+  window.addEventListener('pagehide',()=>{if(objectUrl)URL.revokeObjectURL(objectUrl);});
+})();
+</script></body></html>
