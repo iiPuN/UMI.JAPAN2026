@@ -137,14 +137,41 @@ body.rsvp-modal-open{overflow:hidden}
 .video-clear-btn{padding:8px 10px;background:transparent;border:1px solid #910c2d;border-radius:30px;color:#910c2d;cursor:pointer;font-weight:800}
 .video-test-honesty{font-size:12px;line-height:1.6;color:#743d4d;background:#fff1db;border-radius:13px;padding:12px;text-align:left}
 @media(max-width:480px){.video-choice-actions{flex-direction:column}.video-choice-actions .pill{flex:unset;width:100%}}
+
+/* V8.3 - video guestbook integrated into RSVP */
+.rsvp-video-section{margin-top:26px;padding-top:22px;border-top:2px dashed #dcb4c1;text-align:center}
+.rsvp-video-section h3{font-size:clamp(19px,5vw,24px);color:#910c2d;margin:0 0 12px}
+.rsvp-video-section>p{line-height:1.6;font-size:14px}
+.rsvp-video-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+.rsvp-video-actions .pill{margin:0;font-size:12px;padding:11px 7px;min-height:46px;box-shadow:none}
+.rsvp-video-hint{color:#704454;font-size:12px;line-height:1.6}
+#videoIframeWrap[hidden]{display:none}
+#videoIframeWrap{margin-top:18px;text-align:center}
+#videoUploadFrame{display:block;width:100%;height:450px;border:0;border-radius:14px;background:#fffaf6}
+#videoFallbackLink{font-size:12px;color:#910c2d}
+@media(max-width:400px){.rsvp-video-actions{grid-template-columns:1fr}}
 </style></head><body><a class="skip" href="#details">Skip invitation</a>
 <section class="hero" id="home"><div class="walk-zone" aria-hidden="true"><img class="walking-stars" id="walkingStars" src="assets/run-0.png" alt=""></div><div class="cloud one"></div><div class="cloud two"></div><span class="floating-star a"><svg viewBox="0 0 48 48" width="30" height="30" aria-hidden="true"><path fill="#910c2d" d="M24 3 C28 17 31 20 45 24 C31 28 28 31 24 45 C20 31 17 28 3 24 C17 20 20 17 24 3Z"/></svg></span><span class="floating-star b"><svg viewBox="0 0 48 48" width="30" height="30" aria-hidden="true"><g stroke="#910c2d" stroke-width="3" stroke-linecap="round"><path d="M24 2V14 M24 34V46 M2 24H14 M34 24H46 M8 8L16 16 M32 32L40 40 M40 8L32 16 M16 32L8 40"/></g><circle cx="24" cy="24" r="5" fill="#910c2d"/></svg></span><span class="floating-star c"><svg viewBox="0 0 48 48" width="30" height="30" aria-hidden="true"><path fill="#910c2d" d="M24 3 C28 17 31 20 45 24 C31 28 28 31 24 45 C20 31 17 28 3 24 C17 20 20 17 24 3Z"/></svg></span><div class="hero-inner"><div class="mini">A LITTLE LOVE, A LOT OF FUN</div><img class="hero-card" tabindex="0" src="assets/invitation.jpg" alt="Official Palm and Pun wedding invitation for 28 November 2026 at Milestone Studio" fetchpriority="high"><a class="pill" href="#details">OPEN INVITATION ↓</a><span class="hint">Scroll down to discover our wedding day</span></div></section>
-<audio id="weddingMusic" preload="none" loop src="assets/wedding-violin.mp3"></audio><button id="musicButton" class="music-toggle" type="button" aria-pressed="false" aria-label="Play wedding music">♫ PLAY MUSIC</button><nav aria-label="Wedding page navigation"><a href="#home">HOME</a><a href="#timeline">OUR DAY</a><a href="#dress">DRESS</a><a href="#location">MAP</a><a href="#rsvp">RSVP</a><a href="#video-message">VIDEO ♡</a></nav>
+<audio id="weddingMusic" preload="none" loop src="assets/wedding-violin.mp3"></audio><button id="musicButton" class="music-toggle" type="button" aria-pressed="false" aria-label="Play wedding music">♫ PLAY MUSIC</button><nav aria-label="Wedding page navigation"><a href="#home">HOME</a><a href="#timeline">OUR DAY</a><a href="#dress">DRESS</a><a href="#location">MAP</a><a href="#rsvp">RSVP</a></nav>
 <section class="section details" id="details"><div class="wrap fade"><span class="eyebrow">YOU'RE INVITED</span><h1 class="title">PALM & PUN</h1><p class="sub">are getting married — and you're part of the celebration!</p><div class="stamp"><div class="eyebrow">SAVE THE DATE</div><div class="date">28.11.2026</div><div class="countdown countdown-inside" aria-label="Countdown to 28 November 2026 at 4 PM Thailand time"><span class="countdown-kicker">COUNTING DOWN TO OUR BIG DAY ✦</span><div class="countdown-grid" role="timer" aria-live="off"><div class="countdown-unit"><strong id="countDays">--</strong><small>DAYS</small></div><div class="countdown-unit"><strong id="countHours">--</strong><small>HOURS</small></div><div class="countdown-unit"><strong id="countMinutes">--</strong><small>MINUTES</small></div><div class="countdown-unit"><strong id="countSeconds">--</strong><small>SECONDS</small></div></div><p class="countdown-complete" id="countComplete" hidden>IT'S OUR WEDDING DAY! ♡</p></div></div><div class="cta-row"><a class="pill" href="#location">GET DIRECTIONS ↗</a><a class="pill secondary" href="#timeline">VIEW OUR DAY ↓</a></div></div><div class="details-walk-zone" aria-hidden="true"><img class="details-walker" id="inviteWalker" src="assets/invite-walk-0.png" alt=""></div></section>
 <section class="section timeline" id="timeline"><div class="wrap fade"><span class="eyebrow">HERE'S THE PLAN</span><h2 class="title">OUR WEDDING DAY</h2><p class="sub">A little ceremony, good food, lovely people, and a whole lot of fun.</p><div class="timeline-list"><div class="event"><div class="spark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false"><path fill="#7eb4d5" d="M24 3 C27 15 33 21 45 24 C33 27 27 33 24 45 C21 33 15 27 3 24 C15 21 21 15 24 3Z"/></svg></div><button class="event-art event-art-guests" type="button" data-sprite="guests" aria-label="Play guests arrive animation"><img src="assets/sprite-guests-0.png" loading="lazy" alt="Animated white star illustration for guests arrive"></button><div class="event-copy"><div class="time">4:00 PM</div><h3>GUESTS ARRIVE</h3></div></div><div class="event"><div class="spark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false"><g stroke="#7eb4d5" stroke-width="3.3" stroke-linecap="round"><path d="M24 3V13 M24 35V45 M3 24H13 M35 24H45 M9 9L16 16 M32 32L39 39 M39 9L32 16 M16 32L9 39"/></g><circle cx="24" cy="24" r="4.5" fill="#7eb4d5"/></svg></div><button class="event-art event-art-vow" type="button" data-sprite="vow" aria-label="Play vow ceremony animation"><img src="assets/sprite-vow-0.png" loading="lazy" alt="Animated white star illustration for vow ceremony"></button><div class="event-copy"><div class="time">4:30 PM</div><h3>VOW CEREMONY</h3></div></div><div class="event"><div class="spark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false"><path fill="#7eb4d5" d="M24 3 C27 15 33 21 45 24 C33 27 27 33 24 45 C21 33 15 27 3 24 C15 21 21 15 24 3Z"/></svg></div><button class="event-art event-art-dinner" type="button" data-sprite="dinner" aria-label="Play dinner and speeches animation"><img src="assets/sprite-dinner-0.png" loading="lazy" alt="Animated white star illustration for dinner and speeches"></button><div class="event-copy"><div class="time">6:00 PM</div><h3>DINNER + SPEECHES</h3></div></div><div class="event"><div class="spark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40" aria-hidden="true" focusable="false"><g stroke="#7eb4d5" stroke-width="3.3" stroke-linecap="round"><path d="M24 3V13 M24 35V45 M3 24H13 M35 24H45 M9 9L16 16 M32 32L39 39 M39 9L32 16 M16 32L9 39"/></g><circle cx="24" cy="24" r="4.5" fill="#7eb4d5"/></svg></div><button class="event-art event-art-party" type="button" data-sprite="party" aria-label="Play party animation"><img src="assets/sprite-party-0.png" loading="lazy" alt="Animated white star illustration for party time"></button><div class="event-copy"><div class="time">7:00 PM</div><h3>NOW IT'S A PARTY!</h3></div></div></div></div></section>
 <section class="section dress" id="dress"><div class="wrap fade"><span class="eyebrow">A LITTLE NOTE</span><h2 class="title">DRESS HAPPY!</h2><img class="star-img" src="assets/dress-star.png" alt="Blue star with Palm and Pun red wedding monogram" loading="lazy"><div class="statement">COME AS YOU ARE</div><p class="sub">No dress code, just dress happy.<br>Wear whatever makes you feel like celebrating!</p><p class="dress-remark">A little note: Thinking of wearing all white?<br>Add a splash of color for us today! ♡</p></div></section>
 <section class="section venue" id="location"><div class="wrap fade"><span class="eyebrow">COME FIND US</span><h2 class="title">LOCATION</h2><div class="venue-card"><span aria-hidden="true" style="font-size:40px">✦</span><p class="sub">Here’s where we’ll celebrate together!</p><div class="venue-map"><iframe title="Palm and Pun wedding location preview" src="https://www.google.com/maps/d/embed?mid=1dzSoQIOZci9iMy1yUvM7Icn-HaUbPF4&amp;ll=13.849767444457344%2C100.62674579999998&amp;z=17" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div><p class="venue-map-note">Explore the map below, or tap the button for directions.</p><a class="pill" href="https://www.google.com/maps/d/edit?hl=en&amp;mid=1dzSoQIOZci9iMy1yUvM7Icn-HaUbPF4&amp;ll=13.849767444457344%2C100.62674579999998&amp;z=18" target="_blank" rel="noopener noreferrer">OPEN WEDDING MAP ↗</a></div></div></section>
-<section class="section rsvp" id="rsvp"><div class="wrap fade"><span class="eyebrow">WE'D LOVE TO SEE YOU</span><h2 class="title">WILL YOU JOIN US?</h2><p class="sub">Let us know you'll be there!</p><div class="rsvp-box"><form id="rsvpForm"><label for="guest">YOUR NAME</label><p class="field-hint">Tell us the name we know you by ♡</p><input id="guest" name="guest" placeholder="The name we call you" required autocomplete="name" maxlength="100"><label for="attendance">WILL YOU BE THERE?</label><select id="attendance" name="attendance" required><option value="yes">YES, I’LL BE THERE! ♡</option><option value="no">SORRY, I CAN’T MAKE IT</option></select><div id="guestCountGroup"><label for="count">NUMBER OF GUESTS</label><select id="count" name="count"><option>1</option><option>2</option><option>3</option><option>4</option></select></div><label for="message">LEAVE US A LITTLE MESSAGE ♡</label><textarea id="message" name="message" placeholder="Leave us a little message (optional)" rows="4" maxlength="500"></textarea><button type="submit" class="pill">CONFIRM MY RSVP ♡</button></form><iframe id="rsvpResponseFrame" name="rsvpResponseFrame" title="RSVP confirmation receiver" tabindex="-1" aria-hidden="true" hidden style="display:none"></iframe><p class="status" id="reply" role="status" aria-live="polite">Please review your details before confirming. ♡</p></div></div></section>
+<section class="section rsvp" id="rsvp"><div class="wrap fade"><span class="eyebrow">WE'D LOVE TO SEE YOU</span><h2 class="title">WILL YOU JOIN US?</h2><p class="sub">Let us know you'll be there!</p><div class="rsvp-box"><form id="rsvpForm"><label for="guest">YOUR NAME</label><p class="field-hint">Tell us the name we know you by ♡</p><input id="guest" name="guest" placeholder="The name we call you" required autocomplete="name" maxlength="100"><label for="attendance">WILL YOU BE THERE?</label><select id="attendance" name="attendance" required><option value="yes">YES, I’LL BE THERE! ♡</option><option value="no">SORRY, I CAN’T MAKE IT</option></select><div id="guestCountGroup"><label for="count">NUMBER OF GUESTS</label><select id="count" name="count"><option>1</option><option>2</option><option>3</option><option>4</option></select></div><label for="message">LEAVE US A LITTLE MESSAGE ♡</label><textarea id="message" name="message" placeholder="Leave us a little message (optional)" rows="4" maxlength="500"></textarea><button type="submit" class="pill">CONFIRM MY RSVP ♡</button></form><div class="rsvp-video-section" id="rsvpVideoSection">
+  <h3>SEND US A LITTLE VIDEO ♡</h3>
+  <p>Got a little hello, a funny story, or a wish for us? You can send a video here too!</p>
+  <div class="rsvp-video-actions">
+    <button type="button" class="pill" id="recordVideoBtn">◉ RECORD A VIDEO</button>
+    <button type="button" class="pill secondary" id="chooseVideoBtn">↑ UPLOAD A VIDEO</button>
+  </div>
+  <p class="rsvp-video-hint" id="videoNameHint">Enter your name above first. You won't need to type it again. ♡</p>
+  <div id="videoIframeWrap" hidden>
+    <iframe id="videoUploadFrame" title="Send Palm and Pun a wedding video" loading="lazy" allow="camera; microphone"></iframe>
+    <p class="rsvp-video-hint">Please keep this page open until the video form says THANK YOU! ♡</p>
+    <a id="videoFallbackLink" target="_blank" rel="noopener noreferrer" href="#">Upload form not showing? Open it here ↗</a>
+  </div>
+  <p class="rsvp-video-hint">Already sent your RSVP? Just enter your name and send a video — no need to RSVP again.</p>
+</div><iframe id="rsvpResponseFrame" name="rsvpResponseFrame" title="RSVP confirmation receiver" tabindex="-1" aria-hidden="true" hidden style="display:none"></iframe><p class="status" id="reply" role="status" aria-live="polite">Please review your details before confirming. ♡</p></div></div></section>
 <div class="rsvp-success" id="rsvpSuccessModal" role="dialog" aria-modal="true" aria-labelledby="rsvpSuccessTitle" aria-describedby="rsvpSuccessMessage" hidden>
   <div class="rsvp-success-card" tabindex="-1">
     <span class="rsvp-success-spark left" aria-hidden="true">✦</span><span class="rsvp-success-spark right" aria-hidden="true">✧</span>
@@ -155,33 +182,6 @@ body.rsvp-modal-open{overflow:hidden}
     <button type="button" class="rsvp-success-close" id="rsvpSuccessClose">BACK TO INVITATION ↑</button>
   </div>
 </div>
-<section class="section video-message" id="video-message"><div class="wrap fade">
-<span class="eyebrow">A LITTLE MEMORY FROM YOU</span>
-<h2 class="title">SEND US A LITTLE VIDEO ♡</h2>
-<p class="sub video-intro">A tiny hello, a funny story, or a wish for our big day.<br>We'd love to hear from you!</p>
-<div class="video-upload-card">
-  <div class="video-stars" aria-hidden="true"><svg viewBox="0 0 176 42" width="176" height="42" xmlns="http://www.w3.org/2000/svg" focusable="false"><g fill="#910c2d"><path d="M24 3 Q29 18 44 21 Q29 24 24 39 Q19 24 4 21 Q19 18 24 3Z"/><path d="M152 3 Q157 18 172 21 Q157 24 152 39 Q147 24 132 21 Q147 18 152 3Z"/></g><path d="M88 2 L92 13 L103 8 L98 19 L110 22 L98 25 L103 36 L92 31 L88 42 L84 31 L73 36 L78 25 L66 22 L78 19 L73 8 L84 13Z" fill="#7eb4d5" stroke="#910c2d" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
-  <h3>YOUR VIDEO MESSAGE</h3>
-  <p class="video-setup">Record a new clip or choose one you already have. Preview it before uploading. ♡</p>
-  <div class="video-choice-actions">
-    <button class="pill video-record-btn" type="button" id="recordVideoBtn">◉ RECORD A VIDEO</button>
-    <button class="pill secondary video-choose-btn" type="button" id="chooseVideoBtn">↑ UPLOAD A VIDEO</button>
-  </div>
-  <input id="recordVideoInput" type="file" accept="video/*" capture="environment" hidden>
-  <input id="chooseVideoInput" type="file" accept="video/*" hidden>
-  <div id="videoPreviewArea" class="video-preview-area" hidden>
-    <p class="video-preview-label">YOUR VIDEO PREVIEW</p>
-    <video id="selectedVideoPreview" controls playsinline preload="metadata"></video>
-    <p id="selectedVideoInfo" class="video-preview-info"></p>
-    <button id="clearVideoBtn" type="button" class="video-clear-btn">CHOOSE ANOTHER VIDEO ↺</button>
-  </div>
-  <p class="video-test-honesty">NEXT STEP: Use the private upload form below to send your video. For this test, you'll need to choose the video again in that form. A preview here does not send or save the clip.</p>
-  <h4 class="video-upload-heading">SEND YOUR VIDEO ♡</h4>
-  <iframe class="video-upload-embedded" id="videoUploadEmbedded" src="https://script.google.com/macros/s/AKfycbzy094i4YUt-7i6kioJaFhm08UJuWMMbyaJg3znsJmNLWKbXSc_l_7uSMkDCSt50kdV/exec" title="Upload a private video message for Palm and Pun" loading="eager" referrerpolicy="strict-origin-when-cross-origin" allow="camera; microphone"></iframe>
-  <p class="video-upload-hint">Please wait until you see THANK YOU! ♡ before leaving this page.</p>
-  <details class="video-fallback"><summary>UPLOAD FORM NOT SHOWING?</summary><p>Some browsers may block embedded forms. You can still upload your video using our secure form.</p><a class="pill video-direct-link" href="https://script.google.com/macros/s/AKfycbzy094i4YUt-7i6kioJaFhm08UJuWMMbyaJg3znsJmNLWKbXSc_l_7uSMkDCSt50kdV/exec" target="_blank" rel="noopener noreferrer">OPEN UPLOAD FORM ↗</a></details>
-  <p class="video-upload-hint">Already sent your RSVP? No need to do it again. Video messages are optional and kept privately for Palm &amp; Pun.</p>
-</div></div></section>
 <section class="section closing" id="closing"><div class="wrap fade"><img src="assets/closing-calendar-star.png" loading="lazy" alt="Blue star calendar marking 28 November"><h2 class="title closing-headline"><span class="closing-desktop"><span>SEE YOU AT</span><span>OUR LITTLE BIG PARTY!</span></span></h2><p class="sub">With love,<br><b>PALM & PUN</b></p><a class="pill secondary" href="#home">BACK TO TOP ↑</a></div></section><footer class="footer">PALM & PUN · 28 NOVEMBER 2026 · MADE WITH LOVE ✦</footer>
 <script>const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.fade').forEach(el=>observer.observe(el));const attendanceSelect=document.querySelector('#attendance');const guestCountGroup=document.querySelector('#guestCountGroup');const guestCountSelect=document.querySelector('#count');function updateGuestCountVisibility(){const isComing=attendanceSelect.value==='yes';guestCountGroup.hidden=!isComing;guestCountSelect.disabled=!isComing;}attendanceSelect.addEventListener('change',updateGuestCountVisibility);updateGuestCountVisibility();const RSVP_ENDPOINT='https://script.google.com/macros/s/AKfycbwYtnoGV9Ag_a4daHIZbW-RThSJpNKerFozk4qI1I5QWno2HAhS84R5wniQNaeHkjtP/exec';
 const rsvpForm=document.querySelector('#rsvpForm');
@@ -415,36 +415,28 @@ document.querySelectorAll('.timeline .event-art[data-sprite]').forEach(button=>{
 });
 
 
-// V8.2 TEST: browser camera/file chooser with local preview only.
+
+// V8.3: video form in RSVP; the uploader receives the RSVP name as a URL parameter.
 (function(){
-  const recordBtn=document.getElementById('recordVideoBtn');
-  const chooseBtn=document.getElementById('chooseVideoBtn');
-  const recordInput=document.getElementById('recordVideoInput');
-  const chooseInput=document.getElementById('chooseVideoInput');
-  const area=document.getElementById('videoPreviewArea');
-  const preview=document.getElementById('selectedVideoPreview');
-  const info=document.getElementById('selectedVideoInfo');
-  const clear=document.getElementById('clearVideoBtn');
-  if(!recordBtn||!chooseBtn)return;
-  let objectUrl=null;
-  function reset(){
-    preview.pause();preview.removeAttribute('src');preview.load();
-    if(objectUrl){URL.revokeObjectURL(objectUrl);objectUrl=null;}
-    recordInput.value='';chooseInput.value='';area.hidden=true;
+  const record=document.getElementById('recordVideoBtn');
+  const upload=document.getElementById('chooseVideoBtn');
+  const name=document.getElementById('guest');
+  const wrap=document.getElementById('videoIframeWrap');
+  const frame=document.getElementById('videoUploadFrame');
+  const fallback=document.getElementById('videoFallbackLink');
+  const hint=document.getElementById('videoNameHint');
+  const videoEndpoint='https://script.google.com/macros/s/AKfycbzy094i4YUt-7i6kioJaFhm08UJuWMMbyaJg3znsJmNLWKbXSc_l_7uSMkDCSt50kdV/exec';
+  function openUploader(mode){
+    const guestName=name.value.trim();
+    if(!guestName){ hint.textContent='Please enter your name above before adding a video. ♡';name.focus();return; }
+    const url=videoEndpoint+'?name='+encodeURIComponent(guestName)+'&mode='+encodeURIComponent(mode);
+    frame.src=url;
+    fallback.href=url;
+    wrap.hidden=false;
+    hint.textContent='Video for '+guestName+' ♡';
+    wrap.scrollIntoView({behavior:'smooth',block:'nearest'});
   }
-  function onFile(input){
-    const f=input.files&&input.files[0];if(!f)return;
-    if(!f.type.startsWith('video/')){alert('Please select a video file.');input.value='';return;}
-    reset();objectUrl=URL.createObjectURL(f);preview.src=objectUrl;
-    const mb=(f.size/1048576).toFixed(1);
-    info.textContent=f.name+' · '+mb+' MB — Preview only. Select this file again in the upload form below.';
-    area.hidden=false;area.scrollIntoView({behavior:'smooth',block:'nearest'});
-  }
-  recordBtn.addEventListener('click',()=>recordInput.click());
-  chooseBtn.addEventListener('click',()=>chooseInput.click());
-  recordInput.addEventListener('change',()=>onFile(recordInput));
-  chooseInput.addEventListener('change',()=>onFile(chooseInput));
-  clear.addEventListener('click',reset);
-  window.addEventListener('pagehide',()=>{if(objectUrl)URL.revokeObjectURL(objectUrl);});
+  record.addEventListener('click',()=>openUploader('record'));
+  upload.addEventListener('click',()=>openUploader('upload'));
 })();
 </script></body></html>
